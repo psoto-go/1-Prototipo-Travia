@@ -1,0 +1,122 @@
+html{
+    font-size: 62.5%;
+}
+
+/* GLOBALES */
+h1{
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+li{
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    font-size: 2rem;
+    color: grey;
+}
+
+
+
+
+/* NAVBAR VISTA DESKTOP */
+.navbar {
+    display: flex;
+}
+
+.ul-navbar__links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 60rem;
+}
+
+.ul-navbar__redes{
+    display: flex;
+    width: 35rem;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.tamaño-logo-travia{
+    height: 8rem;
+}
+.tamaño-logo-ig{
+    height: 3rem;
+}
+.tamaño-logo-linkedin{
+    height: 3rem;
+}
+.tamaño-logo-facebook{
+    height: 3rem;
+}
+.tamaño-logo-pinterest{
+    height: 3rem;
+}
+
+/* HEADER */
+header{
+    background-color: grey;
+    height: 55rem;
+}
+.container-header{
+    height: 40rem;
+}
+.color-p-header{
+    color: white;
+}
+.container-texto-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-boton{
+    text-align: center;
+    margin-top: 2rem;
+}
+.boton{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    border-radius: 4rem;
+    background-color: rgb(181, 181, 181);
+    color: rgb(36, 36, 36);
+    padding: 1.2rem 3.6rem;
+    margin: 1rem 0rem;
+}
+
+
+/* SECTION CUADRITOS */
+.movimiento-up{
+    position: relative;
+    bottom: 7rem;
+}
+.container-divs{
+    display: flex;
+    justify-content: space-around   ;
+}
+.cajaEstilo{
+    margin: 2rem;
+    height: 20rem;
+    width: 20rem;
+    background-color: rgb(181, 181, 181);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cajitaTextoEstio{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.7rem;
+}
+.tamaño-mano{
+    height: 3rem;
+}
