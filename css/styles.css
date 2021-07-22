@@ -1,7 +1,9 @@
 html{
     font-size: 62.5%;
 }
-
+body{
+    overflow-x: hidden;
+}
 /* GLOBALES */
 h1{
     font-size: 4rem;
@@ -119,4 +121,132 @@ header{
 }
 .tamaño-mano{
     height: 3rem;
+}
+
+/* SECCCION CAJA VACIA */
+.containerCajaVacia{
+    display: flex;
+    align-items: center;
+}
+.cajaVacia{
+    background-color: #C4C4C4;
+    height: 38rem;
+    width: 41.4rem;
+    border-radius: 12rem 0;
+}
+.h2cajaVacia{
+    font-size: 5rem;
+    line-height: 5.9rem;
+    font-weight: 500;
+    color: #585858;
+}
+.pCajaVacia{
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #585858;
+}
+
+/* DESTINOS */
+.sectionDestinos{
+    margin-top: 15rem;
+    height: 100vh;
+}
+.containerDestinos{
+    position: absolute;
+    left: 20rem;
+    width: 110rem;
+    height: 50rem;
+}
+.containerIMG{
+    height: 30rem;
+    position: absolute;
+    right: 18rem;
+}
+.tamañoImagenDestinos{
+    height: 60rem;
+}
+.h2Destinos{
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 5.9rem;
+}
+.cajaUlDestinos{
+    position: absolute;
+    bottom: 9rem;
+}
+.ulDestinos{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.liDestinos{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #000000;
+    font-weight: normal;
+}
+
+/* CARDS HOTELES */
+.containerGeneralCards{
+    width: 100vw;
+}
+.fondoColorCards{
+    background-color: rgba(231, 231, 231, 0.5);
+    height: 54rem;
+    width: 80vw;
+}
+.h2CardsHoteles{
+    font-size: 5rem;
+    line-height: 5.8rem;
+    color: #585858;
+}
+.cajaPrincipalCards{
+    height: 28.8rem;
+    width: 50rem;
+    background-color: #c4c4c4;
+    border-radius:15px 15px 0px 0px ;
+    margin-left: 5rem;
+    margin-top: 8rem;
+}
+.divContainerCards{
+    display: flex;
+    position: relative;
+    left: 20rem;
+    width: 120rem;
+}
+.containerCajaBlanca{
+    width: 13rem;
+    height: 5rem;
+}
+.cajitaBlanca{
+    width: 13rem;
+    height: 5rem;
+    border-radius: 1rem;
+    color: #ffff;
+}
+.containerTextoCards{
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    bottom: -6.3rem;
+    width: 35rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.h4Cards{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: #000000;
+}
+.pCards{
+    margin: 0;
+}
+.linkCards{
+    color:  #0072F8;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+}
+.subContainerTextoCards{
+    margin-left: 1rem;
 }
