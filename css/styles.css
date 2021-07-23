@@ -250,3 +250,134 @@ header{
 .subContainerTextoCards{
     margin-left: 1rem;
 }
+
+
+/* FORM */
+.container-form{
+    height: 62.8rem;
+    width: 106rem;
+    background-color: #C4C4C4;
+    margin-top: 15rem;
+}
+.divContainer2{
+    width: 84rem;
+    height: 46rem;
+    padding: 10rem  ;
+}
+.h2Form{
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 5.8rem;
+    margin-bottom: 4rem;
+}
+.form1{
+    width: 41rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background: rgba(128, 128, 128, 0.65);
+
+}
+.form1:first-child{
+    margin-bottom: 1rem;
+}
+.form2{
+    width: 20rem;
+    height: 5rem;
+    background: rgba(128, 128, 128, 0.65);
+    border-radius: 1.5rem;
+}
+.form2:nth-child(2){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.form2:first-child{
+    margin-top: 1rem;
+}
+
+.btnForm{
+    padding: 1.2rem 10rem;
+    display: inline-block;
+    margin: 1rem 0;
+    font-size:  1.8rem  ;
+    background-color: #6b6b6b;
+    border-radius: 3.1rem;
+}
+
+/* NEWS LETTER */
+.articleNL{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerNL{
+    width: 41rem;
+    height: 11rem;
+    margin: 0 auto;
+}
+
+.h2NL{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.6rem;
+    text-align: center;
+}
+.pNL{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.containerFormNL{
+    display: flex;
+}
+.divInputNL{
+    width: 26rem;
+}
+.inputNL{
+    width: 26rem;
+    background: #E1E1E1;
+    border-radius: 15px;
+    height: 3rem;
+}
+.btnNL{
+    width: 1rem;
+    
+}
+.btnNL a{
+    padding: 0.6rem 2rem;
+    display: inline-block;
+    font-size:  1.2rem;
+    background-color: #6b6b6b;
+    border-radius: 3.1rem;
+    text-align: center;
+
+}
+
+/* FOOTER */
+footer{
+    background-color: grey;
+    height: 10rem;
+}
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul-navbar__links__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 60rem;
+}
+.ul-navbar__redes__footer{
+    display: flex;
+    width: 35rem;
+    list-style: none;
+    justify-content: space-evenly;
+}
