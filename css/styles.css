@@ -262,7 +262,11 @@ header{
 .divContainer2{
     width: 84rem;
     height: 46rem;
-    padding: 10rem  ;
+    padding: 10rem;
+}
+.formContacto{
+    display: flex;
+    flex-direction: column;
 }
 .h2Form{
     font-weight: 500;
