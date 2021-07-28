@@ -331,3 +331,19 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 120%;
     padding: 1rem;
 }
+
+.index-suscripcion {
+    
+}
+
+.index-suscripcion form {
+    border-style: none;
+}
+
+.index-suscripcion .btn {
+    border-style: none;
+}
+
+.display-none {
+    display: none;
+}
