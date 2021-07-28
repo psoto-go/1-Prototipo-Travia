@@ -1,0 +1,132 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+.navbar-end {
+    align-items: flex-end;
+}
+
+.active {
+    font-weight: bold;
+    color: #6A6A6A;
+}
+
+header div nav ul li a:hover {
+    font-weight: 500;
+    color: #6A6A6A !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61.6px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 700; 
+    line-height: 26.4px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+p {
+    font-size: ;
+    font-weight: ;
+    line-height: 
+}
+
+.bajada {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn {
+    background-color:#F2CD13;
+    color:#000000;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 320px;
+    height: 55px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+    color: white;
+    background-color: #F2CD13;
+    filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+}
+
+section {
+    margin-top: 176px;
+}
+
+/* INDEX */
+
+/* SECCION HABLEMOS */
+
+.index-hablemos--lista {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.lista-check {
+    font-size: 60px;
+    color: #35BBCA;
+    display: inline;
+    margin-right: 40px;
+}
+
+.lista-txt {
+    display: inline;
+}
+
+.btn-hablemos {
+    background-color:#F2CD13;
+    color:#000000;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 320px;
+    height: 55px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
