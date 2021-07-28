@@ -141,7 +141,6 @@ section {
 .fondo {
     background-color: #35BBCA;
     height: 182px;
-    width: 100%;
     color: white;
 }
 
@@ -186,4 +185,22 @@ select {
     font-size: 18px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+}
+
+/* SECCION SUSCRIPCION */
+
+.suscripcion-txt {
+    align-content: center;
+    display: block;
+}
+
+.form-suscripcion {
+    margin-top: 32px;
+}
+
+/* FOOTER */
+
+.footer-fondo {
+    background-color: #35BBCA;
+    height: 250px;
 }
