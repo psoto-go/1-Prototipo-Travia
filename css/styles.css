@@ -95,7 +95,8 @@ p {
 }
 
 section {
-    margin-top: 176px;
+    margin-top: 88px;
+    margin-bottom: 88px;
 }
 
 /* INDEX */
@@ -119,14 +120,70 @@ section {
 }
 
 .btn-hablemos {
-    background-color:#F2CD13;
+    /* background-color:#F2CD13;
     color:#000000;
     border-radius: 8px;
     border-style: none;
     font-size: 18px;
     font-weight: 700;
     width: 320px;
-    height: 55px;
+    height: 55px; */
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
     align-items: center;
+}
+
+/* SECCION CONTACTO */
+
+.contacto-txt {
+    align-content: center;
+}
+
+.fondo {
+    background-color: #35BBCA;
+    height: 182px;
+    width: 100%;
+    color: white;
+}
+
+.contacto-form {
+    margin-top: 80px;
+}
+
+.form-input {
+    padding-bottom: 8px;
+}
+
+.btn-contacto {
+    margin-top: 32px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* appearance: none;       Remove default arrow */
+    /* background-image: url(...);   Add custom arrow  */
+}
+
+.form-control, #inputState {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    background-color: white;
+    color: #4f4f4f;
+    width: 100%;
+}
+
+#inputState {
+    display: block;
+    appearance: none;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
 }

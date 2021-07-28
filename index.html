@@ -106,42 +106,49 @@
 
     <!-- Seccion Contacto -->
     <section class="container-fluid index-contacto">
-        <div class="fondo">
-            <div class="row justify-content-md-center">
+        <div class="fondo contacto-txt row text-center justify-content-center">
+            <div class="col-5">
                 <h2>Contacto</h2>
                 <p class="bajada">Rellena el formulario y programa una llamada con nosotros para bla bla bla bla bla bla bla bla bla bla...</p>
             </div>
         </div>
-        <div class="row justify-content-md-center">
+        <div class="contacto-form row justify-content-md-center">
             <div class="col-lg-5">
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                <div class="mb-3 form-input">
+                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
                 </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                <div class="mb-3 form-input">
+                    <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
                 </div>
-                <div class="row g-3">
+                <div class="row g-3 mb-3 form-input">
                     <div class="col">
-                        <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <label for="formGroupExampleInput2" class="form-label">Provincia</label>
+                        <input type="text" class="form-control" placeholder="Provincia" aria-label="Provincia">
                     </div>
                     <div class="col">
-                        <label for="inputState" class="form-label">State</label>
+                        <label for="inputState" class="form-label">Número de personas</label>
                         <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
+                            <option selected>Elija</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
                         </select>
                     </div>
                 </div>
-                <div class="row g-3">
+                <div class="row g-3 mb-3 form-input">
                     <div class="col-6">
-                        <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <label for="formGroupExampleInput2" class="form-label">Fecha estimada</label>
+                        <input type="text" class="form-control" placeholder="Fecha estimada" aria-label="Fecha estimada">
                     </div>
                 </div>
-                <input class="btn btn-warning" type="button" value="¡Hablemos!">
+                <input class="btn btn-contacto col-6" type="button" value="¡Hablemos!">
             </div>
         </div>
     </section>
