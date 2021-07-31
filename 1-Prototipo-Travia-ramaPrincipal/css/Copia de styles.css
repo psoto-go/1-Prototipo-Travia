@@ -1,0 +1,410 @@
+/* codigo para usar despues */
+/* font-family: 'Inter', sans-serif; */
+
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+/* GENERAL */
+
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+header nav {
+    font-size: 20px !important;
+    color: #6A6A6A;
+    padding: 16px;
+    height: 150px;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+header nav img {
+    height: 65px;
+    width: 65px;
+    object-fit:contain;
+}
+
+/* .navbar-end {
+    align-items: flex-end;
+} */
+
+.active {
+    color: #6A6A6A;
+}
+
+header div nav ul li a:hover {
+    font-weight: 500;
+    color: #6A6A6A !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61.6px;
+}
+
+/* HEADER */
+
+/* ------------ nav */
+header{
+    height: 100vh;
+    background-image: url(../img/headerBack.svg);
+    background-position:bottom right;
+    background-repeat: no-repeat;
+}
+.navIndex{
+    margin: 3rem 5rem;
+} 
+.containerUL{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 40rem;
+}
+.tamaño_logo{
+    height: 8rem;
+}
+.linkIndexHeader{
+    font-family:'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #000000;
+}
+
+/* ----------- seccion titulo */
+.divContainerHeader{
+    width: 100vw;
+    height: 40rem;
+    margin-left: 7rem;
+    margin-top: 7rem;
+
+
+}
+.titulosHeader{
+    width: 63rem;
+    height: 17.7rem;
+    margin-bottom: 4rem;
+}
+.titulosHeader h1{
+    font-family:'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.6rem;
+    line-height: 6.8rem;
+    color: #278B96;
+}
+.titulosHeader h3{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    color: #000000;
+}
+.containerParrafoBotonHeader{
+    width: 63rem;
+    height: 17.7rem;
+}
+.containerParrafoBotonHeader p{
+    font-family:'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #4F4F4F;
+}
+.botonHeader{
+    width: 26rem;
+    height: 5.5rem;
+    background: #F2CD13;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4rem;
+    font-size: 2.2rem;
+    border: none;
+}
+
+/* MOTIVOS TRAVIA */
+.sectionMotivos{
+    height: 100vh;
+    margin-top: 10rem;
+}
+.h2Motivos{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    color: #000000;
+}
+.divContainerMotivos{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+.cajaMotivos{
+    width: 31.8rem;
+    height: 39.4rem;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h3Motivos{ 
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    color: #000000;
+}
+.pMotivos{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #000000;
+    margin-left: 6rem;
+}
+
+/* SECTION TRAVIAJAR */
+.sectionTraviajar{
+    height: 80vh;
+    margin-top: 10rem;
+}
+.h2Traviajar{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    color: #000000;
+}
+.ciudades{
+    width: 113.3rem;
+    height: 23.8rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+}
+.cajaCiudades{
+    height: 20.7rem;
+    width: 26.3rem;
+}
+.cajaCiudades img{
+    border-radius: 9px;
+}
+.cajaCiudades p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #000000;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 700; 
+    line-height: 26.4px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+/* p {
+    font-size: ;
+    font-weight: ;
+    line-height: 
+} */
+
+.bajada {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn {
+    background-color:#F2CD13;
+    color:#000000;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 320px;
+    height: 55px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+    color: white;
+    background-color: #F2CD13;
+    filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+}
+
+section {
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+/* INDEX */
+
+/* SECCION HABLEMOS */
+
+.index-hablemos--lista {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.lista-check {
+    font-size: 60px;
+    color: #35BBCA;
+    display: inline;
+    margin-right: 40px;
+}
+
+.lista-txt {
+    display: inline;
+}
+
+.btn-hablemos {
+    /* background-color:#F2CD13;
+    color:#000000;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 320px;
+    height: 55px; */
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+/* SECCION CONTACTO */
+
+.contacto-txt {
+    align-content: center;
+}
+
+.fondo {
+    background-color: #35BBCA;
+    height: 182px;
+    color: white;
+}
+
+.contacto-form {
+    margin-top: 80px;
+}
+
+.form-input {
+    padding-bottom: 8px;
+}
+
+.btn-contacto {
+    margin-top: 32px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* appearance: none;       Remove default arrow */
+    /* background-image: url(...);   Add custom arrow  */
+    height: 50px;
+}
+
+.form-control, #inputState {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    background-color: white;
+    color: #4f4f4f;
+    width: 100%;
+}
+
+#inputState {
+    display: block;
+    appearance: none;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+/* SECCION SUSCRIPCION */
+
+.suscripcion-txt {
+    align-content: center;
+    display: block;
+}
+
+.form-suscripcion {
+    margin-top: 32px;
+}
+
+/* FOOTER */
+
+.footer-fondo {
+    background-color: #35BBCA;
+    height: 250px;
+}
