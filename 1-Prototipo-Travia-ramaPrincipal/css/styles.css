@@ -27,7 +27,7 @@ header nav {
 }
 
 .bg-light {
-    background-color: white !important;
+    background-color: transparent;
 }
 
 header nav img {
@@ -42,7 +42,7 @@ header nav img {
 
 header div nav ul li a:hover {
     font-weight: 500;
-    color: #6A6A6A !important;
+    color: #6A6A6A ;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -140,7 +140,7 @@ section {
 
 /* INTRO HEADER */
 
-header {
+.headerIndex {
     height: 137vh;
     background-image: url(../img/headerBack.svg);
     background-position:center right;
@@ -190,7 +190,7 @@ header {
 
 .sectionMotivos{
     height: 100vh;
-    margin-top: 10rem;
+    margin-top: 0;
 }
 
 .divContainerMotivos{
@@ -375,4 +375,113 @@ select {
 .footer-fondo {
     background-color: #35BBCA;
     height: 25rem;
+}
+
+
+
+
+/*--------------------------------------- SECCION CIUDADES */ 
+
+
+/* HEADER NAVBAR */
+.headerCiudades{
+    height: 100vh;
+    background: #DADADA;
+}
+
+.divContainerBar{
+    display: flex;
+    justify-content: flex-end;
+    width: 85rem;
+}
+.iniciarSesion{
+    color: white !important; 
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+.iniciarSesion:hover{
+    text-decoration: none;
+        color: white;
+}
+.ulSesion li{
+    margin: 0 2rem;
+}
+.Registrarse{
+    color: #6A6A6A ;
+}
+.Registrarse:hover{
+    text-decoration: none;
+}
+
+
+
+/* HEADER CONTENIDO */
+.divPrincipalTitulo{
+    height: 60vh;
+}
+.divSecundarioTitulo{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2CiudadesHeader{
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6.8rem;
+}
+.divSecundarioTitulo p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+}
+
+/*-------------------------------------- SECTION FILTROS */
+.containerFiltrosUl{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.containerFiltrosUl li{
+    margin: 0 auto;
+    list-style: none;
+    height: 5.1rem;
+    width: 17.6rem;
+    background: #C4C4C4;
+    border-radius: 5rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    /* or 124% */
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerPFiltros{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerPFiltros p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #000000;
 }
