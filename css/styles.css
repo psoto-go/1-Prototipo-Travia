@@ -27,7 +27,7 @@ header nav {
 }
 
 .bg-light {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 header nav img {
@@ -94,8 +94,7 @@ h6 {
 
 .p--2 {
     font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 2rem;
     line-height: 2.4rem;
     color: #000000;
@@ -442,7 +441,9 @@ select {
     font-weight: normal;
     font-size: 2rem;
     line-height: 2.4rem;
-
+}
+.btn-ciudades {
+    margin-top: 3.8rem;
 }
 
 /*-------------------------------------- SECTION FILTROS */
@@ -470,6 +471,9 @@ select {
     justify-content: center;
     align-items: center;
 }
+.container li p {
+    margin: 0;
+}
 .containerPFiltros{
     height: 40rem;
     display: flex;
@@ -484,4 +488,41 @@ select {
     line-height: 2.4rem;
 
     color: #000000;
+}
+
+/* SECCION MAPA */ 
+
+.fondo-mapa {
+    background-color: #F7F7F7;
+    margin-top: 5.3rem;
+}
+.ciudades-intromapa--txt {
+    padding: 4.2rem 0 4.2rem 0;
+}
+.ciudades-intromapa--txt p {
+    margin-top: 3rem;
+}
+
+/* falta la lista encima del mapa */
+.ciudades-mapa {
+    padding-bottom:48rem;
+    position:relative;
+    height:0;
+    margin-bottom: 5.3rem;
+}
+.ciudades-mapa iframe{
+    left:0;
+    top:0;
+    height:48rem;
+    width:100%;
+    position:absolute;
+}
+
+/* SECCION GALERIA FIJA */
+.ciudades-galeria--txt {
+    margin-top: 5.3rem;
+}
+.ciudades-galeria--txt p {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
