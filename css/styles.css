@@ -181,7 +181,7 @@ section {
     padding: 1rem 2rem;
 }
 .backgroundDivHeader{
-    height: 100vh;
+    height: 115vh;
     background-image: url(../img/headerBack.svg);
     background-repeat: no-repeat;
     background-position: 48.8rem 13.2rem;
@@ -189,10 +189,10 @@ section {
 
 }
 .headerIndex {
-    height: 100vh;
-    background-image: url(../img/Ellipse\ 146.svg);
+    background-image: url(../img/fondoIndex.svg);
     background-repeat: no-repeat;
-    background-position: 59.8rem -5.1rem;
+    background-size: cover;
+    object-fit: cover;
 }
 .containerNavHeader{
     display: flex;
@@ -203,13 +203,7 @@ section {
     height: 40rem;
     margin-top: 4.7rem;
 }
-.divTextoHeader{
-    margin-left: 0;
-    background-image: url(../img/Ellipse\ 149.svg);
-    background-repeat: no-repeat;
-    background-position: -458px -11px;
-    height: 100vh;
-}
+
 .divContainerHeaderTexto{
     margin-left: 11.2rem;
 }
@@ -249,18 +243,22 @@ section {
 /* SECCION PARTNERS */
 
 .index-partners{
+    margin-top: -20rem;
     margin-bottom: 11rem;
-    margin-top: 12rem;
+    z-index: 25;
 }
 
 
 /* SECCION HABLEMOS */
 
 .index-hablemos{
-    background-image: url(../img/Rectangle\ 298.svg);
+    background-image: url(../img/fondoHablemos-index.svg);
     background-repeat: no-repeat;
-    height: 137vh;
-    background-position: -8.7rem -4rem;
+    height: 110vh;
+    background-size: cover;
+}
+.index-hablemos--bloque {
+    padding-top: 15vh;
 }
 .index-hablemos--lista {
     display: flex;
@@ -273,7 +271,7 @@ section {
 }
 .lista-check {
     font-size: 6rem;
-    color: #35BBCA;
+    color: #798BF2;
     display: inline;
     margin-right: 4rem;
 }
@@ -393,10 +391,10 @@ section {
 
 .sectionVectorGrande{
     height: 139vh;
-    background-image: url(../img/Rectangle\ 297.svg);
+    background-image: url(../img/fondoCollapsable-index.svg);
     margin-bottom: 0;
     background-repeat: no-repeat;
-    background-position: -23.9rem -5.7rem;
+    background-size:cover;
 }
 .divTituloVector{
     margin-top: 23.6rem;
@@ -433,19 +431,24 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
     border-bottom: 1px solid white;
     width: 47.5rem;
     padding: 0 0 1rem 0;
     margin-top: 2.8rem;
 }
+.cajaMasInfoVectorGrande i {
+    font-size: 4.2rem;
+    color: #5F6B9F;
+}
 .cajaMasInfoVectorGrande button{
-    border-radius: 100px;
     width: 5rem;
     font-size: 3rem;
+    border-style: none;
     background-color: transparent;
-    color: white;
-    border: 0.5px solid white;
+}
+.cajaMasInfoVectorGrande img {
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
 }
 .cajaMasInfoVectorGrande h3{
     font-style: normal;
@@ -528,6 +531,9 @@ select {
     align-content: center;
     display: block;
 }
+.tituloSuscripcion {
+    margin: 0 0 2.2rem 0;
+}
 .form-suscripcion {
     border: 2px solid #585858;
     box-sizing: border-box;
@@ -535,6 +541,7 @@ select {
     width: 386px;
     height:55px;
     margin: 0 auto;
+    margin-top: 3.2rem;
 }
 .form-controlSub{
     width: 386px;
@@ -552,10 +559,13 @@ select {
 }
 .btn-suscripcion{
     background: #798BF2;
-border-radius: 50px;
-width: 108px;
-height: 47px;
-margin-right: 2.3rem;
+    border-radius: 50px;
+    width: 108px;
+    height: 47px;
+    margin-right: 2.3rem;
+    align-self: center;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 
