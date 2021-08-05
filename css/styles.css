@@ -261,7 +261,7 @@ section {
 
 /* SECCION HABLEMOS */
 
-.index-hablemos{
+.index-hablemos {
     background-image: url(../img/fondoHablemos-index.svg);
     background-repeat: no-repeat;
     height: 110vh;
@@ -617,7 +617,6 @@ ul {
 
 /*--------------------------------------- SECCION CIUDADES --------------------------------------*/ 
 
-
 /* HEADER NAVBAR */
 .headerCiudades{
     height: 100vh;
@@ -669,6 +668,7 @@ ul {
 }
 
 
+
 /* HEADER CONTENIDO */
 .divPrincipalTitulo{
     height: 60vh;
@@ -697,7 +697,7 @@ ul {
 
 }
 
-/* SECTION FILTROS */
+/*-------------------------------------- SECTION FILTROS */
 .containerFiltrosUl{
     display: flex;
     align-items: flex-start;
@@ -756,15 +756,19 @@ ul {
 /* ------------------- */
 
 .sectionVectorGrandeMallorca{
-    background-image: url(../img/Rectangle\ 298.svg);
-    height: 133vh;
+    background-image: url(../img/fondoHablemos-index.svg);
+    background-repeat: no-repeat;
+    height: 110vh;
+    background-size: cover;
+    margin-top: -15rem;
 }
+
 .cajaMasInfoVectorGrandeMallorca{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;
-    border-bottom: 1px solid #394273;
+    align-items: center;
+    border-bottom: 1px solid #8F9690;
     width: 47.5rem;
     padding: 0 0 1rem 0;
     margin-top: 2.8rem;
@@ -777,13 +781,18 @@ line-height: 2.4rem;
 
 color: #000000;
 }
+.cajaMasInfoVectorGrandeMallorca i {
+    font-size: 4.2rem;
+    color: #5F6B9F;
+}
 .cajaMasInfoVectorGrandeMallorca button{
-    border-radius: 100px;
     width: 5rem;
     font-size: 3rem;
+    border-style: none;
     background-color: transparent;
-    color: #394273;
-    border: 0.5px solid #394273;
+}
+.cajaMasInfoVectorGrandeMallorca img {
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
 }
 .pVectorGrandeMallorca{
     font-style: normal;
@@ -792,7 +801,6 @@ color: #000000;
     line-height: 3rem;
 
     color: #000000;
-
 }
 .divContainerDivsVectorCiudades{
     margin-top: 3rem;
