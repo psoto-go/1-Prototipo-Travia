@@ -138,19 +138,24 @@ h6 {
 }
 
 .p--3 {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
     color: #424242;
 }
 
-/* .p--4 {
-
+.p--4 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.516rem;
+    color: #000000, 100%;
 }
 
-.p--5 {
+/* .p--5 {
 
 } */
 
@@ -173,9 +178,10 @@ h6 {
 }
 
 section {
-    margin-top: 88px;
-    margin-bottom: 88px;
+    margin-top: 8.8rem;
+    margin-bottom: 8.8rem;
 }
+
 
 
 /*-------------------------------------- INDEX --------------------------------------*/
@@ -615,6 +621,8 @@ ul {
     font-weight: 500;
 }
 
+
+
 /*--------------------------------------- SECCION CIUDADES --------------------------------------*/ 
 
 /* HEADER NAVBAR */
@@ -808,6 +816,7 @@ color: #000000;
     flex-direction: column;
     align-items: center;
 }
+
 /* GOOGLE MAPS */
 .div1Maps{
     width: 128rem;
@@ -857,17 +866,106 @@ color: #394273;
 
 /*-------------------------------------- PAGINA QUIENES SOMOS --------------------------------------*/
 
+/* HEADER */
 .headerQuienes {
     background-color: #F0FAF1;
     height: 100vh;
 }
 .headerImg {
     background-image: url(../img/headerQuienes.svg);
-    height: 53.4vh;
-    object-fit:cover;
+    height: 60vh;
+    object-fit: contain;
     background-position-x: right;
     background-position-y: center;
     background-repeat: no-repeat;
 }
+.quienesIntro {
+    align-self: center;
+}
+
+/* SECCION PARRAFO/FORMAS */
+.quienesFormas {
+    background-image: url(../img/formas-quienes.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 29rem;
+    margin-bottom: 20rem;
+}
+.quienesFormasTxt {
+    transform: translateY(45%);
+}
+
+/* SECCION CONTENEDORES DEGRADE */
+.quienesDegradeIzq {
+    background-image: url(../img/forma_gradiente1-quienes.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-top: 25rem;
+}
+.quienesDegradeDer {
+    background-image: url(../img/forma_gradiente2-quienes.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin-bottom: 25rem;
+}
+.quienesDegradeTxt-izq {
+    color: white;
+    padding: 10rem 16rem 10rem 0;
+}
+.quienesDegradeTxt-izq .p--1 {
+    color: white;
+}
+.quienesDegradeTxt-der {
+    color: white;
+    padding: 10rem 0rem 10rem 16rem;
+}
+.quienesDegradeTxt-der .p--1 {
+    color: white;
+}
+
+/* SECCION EQUIPO */
+.fondoOnda {
+    margin-top: 25rem;
+    margin-bottom: -8rem;
+    background-image: url(../img/fondo-onda.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+}
+.quienesEquipo h2 {
+    color: #394273;
+    transform: translateY(-100%);
+}
+.quienesEquipo-caja {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    display: flex;
+    padding: 0;
+    margin-top: 20rem;
+    justify-content: center;
+    height: 40vh;
+    transform: translateY(-25%);
+}
+.quienesEquipo-caja .equipoMiembro {
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-20%);
+}
+.quienesEquipo-caja h5 {
+    color: #394273;
+    margin: 1.6rem 0 4.8rem 0;
+}
+.quienesEquipo-caja .p--2 {
+    color: #7C7C7C;
+}
+
 
 /* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
