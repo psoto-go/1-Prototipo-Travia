@@ -161,6 +161,10 @@ section {
     position: fixed;
     left: 93%;
     bottom: 0%;
+    
+}
+.hidden{
+    visibility: hidden;
 }
 /* INTRO HEADER */
 .inicioNavBar{
