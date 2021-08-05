@@ -157,7 +157,11 @@ section {
 }
 
 /* INDEX */
-
+.btn-subir{
+    position: fixed;
+    left: 93%;
+    bottom: 0%;
+}
 /* INTRO HEADER */
 .inicioNavBar{
     color: #FFFFFF;
@@ -166,6 +170,10 @@ section {
     background: #394273;
     border-radius: 3.6rem;
     padding: 1rem 2rem;
+}
+.inicioNavBar:hover{
+        color: white;
+        filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
 }
 .backgroundDivHeader{
     height: 100vh;
@@ -624,14 +632,18 @@ margin-right: 2.3rem;
 /* HEADER NAVBAR */
 .headerCiudades{
     height: 100vh;
-    background: #DADADA;
+    background: url(../img/calm-clouds-summer-turquoise-majorca-ocean\ 3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .divContainerBar{
     display: flex;
     justify-content: flex-end;
-    width: 85rem;
+    width: 108rem;
 }
+
 .iniciarSesion{
     color: white !important; 
     background: #000000;
@@ -644,6 +656,18 @@ margin-right: 2.3rem;
 .iniciarSesion:hover{
     text-decoration: none;
         color: white;
+}
+.navLinkCiudades{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin: 2.5rem;
+}
+.navLinkCiudades:hover{
+        text-decoration: none;
 }
 .ulSesion li{
     margin: 0 2rem;
@@ -670,12 +694,14 @@ margin-right: 2.3rem;
     align-items: center;
 }
 .h2CiudadesHeader{
+    color: #FFFFFF;
     font-size: 5.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 6.8rem;
 }
 .divSecundarioTitulo p{
+    color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
     font-size: 2rem;
@@ -694,7 +720,7 @@ margin-right: 2.3rem;
     list-style: none;
     height: 5.1rem;
     width: 17.6rem;
-    background: #C4C4C4;
+    background: rgba(39, 139, 150, 0.4);
     border-radius: 5rem;
     font-style: normal;
     font-weight: bold;
@@ -708,6 +734,11 @@ margin-right: 2.3rem;
     justify-content: center;
     align-items: center;
 }
+.containerFiltrosUl li:hover{
+    color: white;
+    background: #278B96;
+    filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+}
 .containerFiltrosUl li a{
     text-decoration: none;
     color: #FFFFFF;
@@ -717,7 +748,7 @@ margin-right: 2.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .containerPFiltros p{
     font-style: normal;
@@ -727,9 +758,60 @@ margin-right: 2.3rem;
 
     color: #000000;
 }
+.containerBackgroundImageFiltrosMallorca{
+    background-image: url(../img/Ilus\ hombre\ vacaciones\ ordenador.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 
 
+/* ------------------- */
 
+.sectionVectorGrandeMallorca{
+    background-image: url(../img/Rectangle\ 298.svg);
+    height: 133vh;
+}
+.cajaMasInfoVectorGrandeMallorca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-bottom: 1px solid #394273;
+    width: 47.5rem;
+    padding: 0 0 1rem 0;
+    margin-top: 2.8rem;
+}
+.cajaMasInfoVectorGrandeMallorca h3{
+    font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 2.4rem;
+
+color: #000000;
+}
+.cajaMasInfoVectorGrandeMallorca button{
+    border-radius: 100px;
+    width: 5rem;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #394273;
+    border: 0.5px solid #394273;
+}
+.pVectorGrandeMallorca{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+    color: #000000;
+
+}
+.divContainerDivsVectorCiudades{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* GOOGLE MAPS */
 .div1Maps{
     width: 128rem;
@@ -756,34 +838,22 @@ margin-right: 2.3rem;
 .maps{
     padding: 0;
 }
-
-
-/* IMAGENES FIJAS */
-.containerImagenesFijas h2{
+.h2HablemosCiudades{
     font-style: normal;
-    font-weight: 500;
-    font-size: 4.8rem;
-    line-height: 5.8rem;
-    color: #000000;
+font-weight: 500;
+font-size: 4.8rem;
+line-height: 5.8rem;
+color: #394273;
 }
-.containerImagenesFijas p{
+.pHablemosCiudades{
     font-style: normal;
     font-weight: normal;
-    font-size: 2rem;
-    line-height: 2.4rem;
-    color: #000000;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    width: 63.2rem;
+    margin: 3rem auto 0 auto;
+    color: #394273;
 }
-.containerImagenes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.containerImagenes div{
-    height: 25.1rem;
-    width: 25.1rem;
-    background-color: #E7E8E5;
-    margin-bottom: 4rem;
+.btnHablemosCiudades{
+    margin: 3rem auto 0 auto;
 }
