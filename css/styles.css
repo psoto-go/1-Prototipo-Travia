@@ -39,6 +39,7 @@ header nav img {
 .active {
     color: #6A6A6A !important;
 }
+
 .navLink{
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -48,6 +49,7 @@ header nav img {
     color: #394273;
     margin: 2.5rem;
 }
+
 .navLinkB{
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -57,12 +59,15 @@ header nav img {
     color: #394273;
     margin: 1rem 0;
 }
+
 .navLink:hover{
+    font-weight: 500;
+    color: #394273;
     text-decoration: none;
 }
-header div nav ul li a:hover {
-    font-weight: 500;
-    color: #6A6A6A ;
+
+#page-current:hover {
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -73,6 +78,7 @@ h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 6.16rem;
+    color: #394273;
 }
 
 h2 {
@@ -121,11 +127,16 @@ h6 {
     color: #000000;
 }
 
-/* .p--3 {
-
+.p--3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 42px;
+    color: #424242;
 }
 
-.p--4 {
+/* .p--4 {
 
 }
 
@@ -156,9 +167,11 @@ section {
     margin-bottom: 88px;
 }
 
+
 /* INDEX */
 
 /* INTRO HEADER */
+
 .inicioNavBar{
     color: #FFFFFF;
     height: 4rem;
@@ -175,7 +188,6 @@ section {
     background-size: 88rem 49rem;
 
 }
-
 .headerIndex {
     height: 100vh;
     background-image: url(../img/Ellipse\ 146.svg);
@@ -209,16 +221,13 @@ section {
     height: 17.7rem;
     margin-bottom: 4rem;
 }
-
 .titulosHeader h1{
     color: #278B96;
 }
-
 .titulosHeader h3{
     font-style: normal;
     font-weight: normal;
 }
-
 .containerParrafoBotonHeader{
     width: 63rem;
     height: 17.7rem;
@@ -231,12 +240,14 @@ section {
     line-height: 2.4rem;
     color: #4F4F4F;
 }
-
 .btn-intro {
     border-radius: 4rem;
     margin-top: 1.6rem;
 }
+
+
 /* SECCION PARTNERS */
+
 .index-partners{
     margin-bottom: 11rem;
     margin-top: 12rem;
@@ -244,6 +255,7 @@ section {
 
 
 /* SECCION HABLEMOS */
+
 .index-hablemos{
     background-image: url(../img/Rectangle\ 298.svg);
     background-repeat: no-repeat;
@@ -254,21 +266,17 @@ section {
     display: flex;
     margin-bottom: 55px;
 }
-
-
 .divBackgroundImg{
     background-image: url(../img/Ellipse\ 150.svg);
     background-repeat: no-repeat;
     margin-left: 13rem;
 }
-
 .lista-check {
     font-size: 6rem;
     color: #35BBCA;
     display: inline;
     margin-right: 4rem;
 }
-
 .lista-txt {
     display: inline;
 }
@@ -300,14 +308,12 @@ section {
     justify-content: center;
     height: 100vh;
     margin-top: 7rem;
-
 }
 .imagenBCKcards{
     height: 106vh;
     background-image: url(../img/Ellipse\ 147.svg);
     background-repeat: no-repeat;
     background-position: 64.2rem 34.5rem;
-
 }
 .h2Cards{
     font-style: normal;
@@ -384,6 +390,7 @@ section {
 
 
 /* SECCION VECTOR GRANDE */
+
 .sectionVectorGrande{
     height: 139vh;
     background-image: url(../img/Rectangle\ 297.svg);
@@ -449,8 +456,6 @@ section {
 }
 
 
-
-
 /* SECCION CONTACTO */
 .index-contacto{
     margin-top: 0;
@@ -458,7 +463,6 @@ section {
 .contacto-txt {
     align-content: center;
 }
-
 .fondo {
     background-color: #F1CC33;
     height: 20rem;
@@ -469,19 +473,15 @@ section {
     margin-top: 1rem;
     padding-top: 1rem;
 }
-
 .contacto-form {
     margin-top: 8rem;
 }
-
 .form-input {
     padding-bottom: 0.8rem;
 }
-
 .btn-contacto {
     margin-top: 3.2rem;
 }
-
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -489,7 +489,6 @@ select {
     /* background-image: url(...);   Add custom arrow  */
     height: 50px;
 }
-
 .form-control {
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
@@ -502,27 +501,25 @@ select {
     color: #4f4f4f;
     width: 100%;
 }
-
 #inputState {
     display: block;
     appearance: none;
 }
-
 .form-label {
     font-size: 1.8rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
 .form-select{
-        font-size: 1.6rem;
-        width: 100%;
-        height: 4.2rem;
-        color: #4f4f4f;
-        border: 1px solid #BDBDBD;
-        font-weight: 400;
-        border-radius: 4rem;
-        text-align: center;
-        padding: 0 2rem;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 4.2rem;
+    color: #4f4f4f;
+    border: 1px solid #BDBDBD;
+    font-weight: 400;
+    border-radius: 4rem;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 /* SECCION SUSCRIPCION */
@@ -531,7 +528,6 @@ select {
     align-content: center;
     display: block;
 }
-
 .form-suscripcion {
     border: 2px solid #585858;
     box-sizing: border-box;
@@ -561,62 +557,50 @@ width: 108px;
 height: 47px;
 margin-right: 2.3rem;
 }
+
+
 /* FOOTER */
-.footerIndex{
-    background-image: url(../img/Footer.svg);
-    height: 45.7rem;
-    background-size: 189rem;
-    background-position: center;
+
+ul {
+    margin: 0;
 }
-.svgFooter{
-    position: relative;
-    bottom: -127px;
-    left: 535px;
+
+.footerFondo{
+    background-image: url(../img/Footer_1.svg);
+    padding: 15rem 0rem 20rem 0rem;
+    margin-top: 7.4rem;
+    background-repeat: none;
+    background-size: cover;
 }
-.redesSociales{
-    position: relative;
-    bottom: -169px;
-    left: 579px;
+.rrss {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 3.2rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
-.listaFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    bottom: -22.4rem;
+.footerLink {
+    align-items: center;
+    margin-top: 5.4rem;
 }
-.listaFooter li{
+.footerLink li {
+    text-decoration: none;
+    font-style: none;
     list-style: none;
-}
-.listaFooter li a{
-    font-style: normal;
-    font-weight: normal;
+    color: white;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
-    text-decoration: none;
-    
+    display: inline;
+    padding: 0rem 2rem 0rem 2rem;
 }
-.listaFooter2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    bottom: -27.4rem;
-    right: -5rem;
-}
-.listaFooter2 li{
-    list-style: none;
-    font-style: normal;
-    font-weight: normal;
+.footerLink a {
+    color: white;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
-    text-decoration: none;
 }
-
-
-
+.linkActivo {
+    font-weight: 500;
+}
 
 /*--------------------------------------- SECCION CIUDADES */ 
 
@@ -626,7 +610,6 @@ margin-right: 2.3rem;
     height: 100vh;
     background: #DADADA;
 }
-
 .divContainerBar{
     display: flex;
     justify-content: flex-end;
@@ -656,7 +639,6 @@ margin-right: 2.3rem;
 }
 
 
-
 /* HEADER CONTENIDO */
 .divPrincipalTitulo{
     height: 60vh;
@@ -680,10 +662,11 @@ margin-right: 2.3rem;
     font-weight: normal;
     font-size: 2rem;
     line-height: 2.4rem;
-
 }
 
+
 /*-------------------------------------- SECTION FILTROS */
+
 .containerFiltrosUl{
     display: flex;
     align-items: flex-start;
@@ -724,10 +707,8 @@ margin-right: 2.3rem;
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
-
     color: #000000;
 }
-
 
 
 /* GOOGLE MAPS */
@@ -786,4 +767,20 @@ margin-right: 2.3rem;
     width: 25.1rem;
     background-color: #E7E8E5;
     margin-bottom: 4rem;
+}
+
+
+/* PAGINA QUIENES SOMOS */
+
+.headerQuienes {
+    background-color: #F0FAF1;
+    height: 100vh;
+}
+.headerImg {
+    background-image: url(../img/headerQuienes.svg);
+    height: 53.4vh;
+    object-fit:cover;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
 }
