@@ -224,7 +224,6 @@ section {
     background-repeat: no-repeat;
     background-position: 48.8rem 13.2rem;
     background-size: 88rem 49rem;
-
 }
 .headerIndex {
     background-image: url(../img/fondoIndex.svg);
@@ -991,3 +990,35 @@ color: #394273;
 
 
 /* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
+
+/* HEADER */
+.headerHacemos {
+    height: 100vh;
+}
+.headerHacemosImg {
+    background-image: url(../img/hacemosfondo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    height:85vh;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+
+/* SECCION CAMINO */
+
+
+
+/* SECCION CALL-TO-ACTION */
+.callTxt {
+    padding-top: 24rem;
+}
+.callTxt h2 {
+    margin-bottom: 3.4rem;
+    color: #394273;
+}
+.callTxt p {
+    margin-bottom: 1.2rem;
+    color: #394273;
+}

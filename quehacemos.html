@@ -28,9 +28,9 @@
         <!-- Stylesheet propia -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
-        <header class="headerQuienes">
-            <article class="Quienesimg">
+    <body> 
+        <header class="headerHacemos" id="headerInicio">
+            <div class="headerHacemosImg" >
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
                         <a class="navbar-brand" href="index.html"><img src="img/golondrina0.png" width="30" height="30" class="d-inline-block align-top" alt="Logo de Travia"></a>
@@ -40,20 +40,20 @@
                         <div class="collapse navbar-collapse containerNavHeader" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="navLink" href="index.html">Inicio</a>
+                                    <a class="navLink " href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="navLink" href="quienessomos.html">Quienes Somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="navLink inicioNavBar" id="page-current" aria-current="page" href="quehacemos.html">Que hacemos</a>
+                                    <a class="navLink inicioNavBar" aria-current="page" href="quehacemos.html">Que hacemos</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="navLink dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Destinos
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item navLinkB" href="Mallorca.html">Mallorca</a></li>
+                                        <li><a class="dropdown-item navLinkB" href="./Mallorca.html">Mallorca</a></li>
                                         <li><a class="dropdown-item navLinkB" href="#">Asturias</a></li>
                                         <li><a class="dropdown-item navLinkB" href="#">Murcia</a></li>
                                         <li><a class="dropdown-item navLinkB" href="#">Islas Canarias</a></li>
@@ -61,19 +61,23 @@
                                 </li>
                             </ul>
                         </div>
-                    </nav>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-xl-6 col-lg-6">
-                                <div class="">
-                                    <h1>TRAVIA</h1>
-                                    <p class="p--3">Lorem ipsum lorem ipsum</p>
-                                </div>
+                    </div>
+                </nav>
+                <div class="container divTextoHeader">
+                    <div class="row divContainerHeader">
+                        <div class="col-md-12 col-xl-6 col-lg-6 divContainerHeaderTexto">
+                            <div class="titulosHeader">
+                                <h1>Organiza tu viaje<br>de negocios</h1>
+                                <h3>Que trabajar no te impida viajar</h3>
+                            </div>
+                            <div class="containerParrafoBotonHeader">
+                                <p class="p--2">Reserva y gestiona tus viajes de negocios de larga  <br> estancia en una sola plataforma, más fácil que nunca.</p>
+                                <button class="btn btn-intro">¡Hablemos!</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </article>
+        </div>
         </header>
 
         <a href="#headerInicio"><svg class="btn-subir hidden" width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +100,27 @@
             </defs>
             </svg></a> 
 
-        <!-- SECCIONES INTERMEDIAS -->
+        <!-- SECCION CAMINO -->
+        <section class="container camino">
+            <div class="row">
+                <div class="">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CALL-TO-ACTION -->
+        <section class="container-fluid call-to-action fondoOnda">
+            <div class="container">
+                <div class="row callTxt justify-content-center">
+                    <div class="col-8 text-center">
+                        <h2>Lorem ipsum lorem </h2>
+                        <p class="p--1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida turpis ut sed pulvinar aliquet quis faucibus id duis. Lacus, ac, ut odio velit feugiat.</p>
+                        <button class="btn btn-intro">¡Hablemos!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FOOTER -->
         <footer class="footerFondo container-fluid text-center">
