@@ -155,8 +155,14 @@ h6 {
     color: #000000, 100%;
 }
 
-/* .p--5 {
-} */
+.p--5 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #000000;
+}
 
 
 /* BOTONES */
@@ -1007,10 +1013,68 @@ color: #394273;
 
 
 /* SECCION CAMINO */
+.camino {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.fondoCamino1 {
+    background-image: url(../img/caminoFondo1.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.fondoCamino2 {
+    background-image: url(../img/caminoFondo2.svg);
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.fondoCamino3 {
+    background-image: url(../img/caminoFondo3.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.hacemosCamino {
+    align-items: center;
+}
+.camino-2 {
+    margin: 16rem 0rem 16rem 0rem;
+}
+.hacemosCamino h4 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+}
+.hacemosCamino img {
+    height: 32rem;
+}
+.scrollCirculoInicio {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+.scrollCirculo {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+.scrollCirculoFinal {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
 
 
 
 /* SECCION CALL-TO-ACTION */
+.call-to-action {
+    margin-top: 0rem;
+}
 .callTxt {
     padding-top: 24rem;
 }
