@@ -76,6 +76,11 @@ header nav img {
     text-decoration: none;
 }
 
+.containerNavHeader{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #page-current:hover {
     color: white;
 }
@@ -164,7 +169,93 @@ h6 {
     color: #000000;
 }
 
-@media (min-width: 320px) and (max-width: 414px)  {
+section {
+    margin-top: 8.8rem;
+    margin-bottom: 8.8rem;
+}
+
+
+
+/* FOOTER */
+
+ul {
+    margin: 0;
+}
+
+.footerFondo{
+    background-image: url(../img/Footer_1.svg);
+    padding: 15rem 0rem 8rem 0rem;
+    margin-top: 7.4rem;
+    background-repeat: none;
+    background-size: cover;
+}
+.rrss {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 3.2rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+.rrss:hover {
+    color: #394273;
+}
+.rrss:active {
+    color: #31364F;
+}
+.footerLink {
+    align-items: center;
+    margin-top: 5.4rem;
+}
+.footerLink li {
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.footerLink a {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+}
+.linkActivo {
+    font-weight: 500;
+}
+
+
+
+/* BOTONES */
+
+.btn {
+    background-color: #F2CD13;
+    color:#000000;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 320px;
+    height: 55px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+    color: black;
+    background-color: #FCE158;
+    filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+}
+.btn:active{
+    background: #E2C011;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+
+
+/* ---------------------------------- RESPONSIVE DE COMPONENTES GENERALES ---------------------------------- */
+
+@media (min-width: 300px) and (max-width: 414px)  {
     h1 {
         font-weight: 600;
         font-size: 30px;
@@ -176,10 +267,14 @@ h6 {
         line-height: 24px;
     }
     h3 {
-
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
     }
     h4 {
-
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
     }
     h5 {
         font-weight: 500;
@@ -208,11 +303,58 @@ h6 {
         text-align: justify;
     }
     .p--5 {
-
+        font-size: 16px;
+        line-height: 19px;
+    }
+    body header article nav div img {
+        height: 5vh;
+    }
+    section {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .btn {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        width: 26rem;
+    }
+    footer article div img {
+        height: 4.8rem;
+    }
+    .rrss {
+        font-size: 1.6rem;
+    }
+    .footerLink ul li, .footerLink ul li a {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+    }
+    .footerLink--2 ul li {
+        display: block;
+    }
+    .navbar ul li a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .navbar ul li a :active {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #394273;
+    }
+    .containerNavHeader {
+        justify-content: center;
+        text-align: center;
+    }
+    .inicioNavBar:hover{
+        background: none;
+        color: #394273 !important;
+        filter: none
     }
 }
 
-@media (min-width: 414,01px) and (max-width: 800px) {
+@media (min-width: 414,01px) and (max-width: 799.9px) {
     h1 {
 
     }
@@ -246,53 +388,32 @@ h6 {
     .p--5 {
         
     }
+    body header article nav div img {
+        height: 8vh;
+    }
 }
 
-
-
-/* BOTONES */
-
-.inicioNavBar{
-    color: #FFFFFF;
-    height: 4rem;
-    width: 9.2rem;
-    background: #394273;
-    border-radius: 3.6rem;
-    padding: 1rem 2rem;
+@media (min-width: 800px) {
+    .inicioNavBar{
+        color: #FFFFFF;
+        height: 4rem;
+        width: 9.2rem;
+        background: #394273;
+        border-radius: 3.6rem;
+        padding: 1rem 2rem;
+    }
+    .inicioNavBar:hover{
+            background: rgba(147, 156, 209, 0.53);
+            color: white;
+            filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+    }
+    .inicioNavBar:active{
+        background: #31364F;
+    } 
 }
-.inicioNavBar:hover{
-        background: rgba(147, 156, 209, 0.53);
-        color: white;
-        filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
-}
-.inicioNavBar:active{
-    background: #31364F;
-} 
-.btn {
-    background-color: #F2CD13;
-    color:#000000;
-    border-radius: 8px;
+
+.navbar-toggler {
     border-style: none;
-    font-size: 18px;
-    font-weight: 700;
-    width: 320px;
-    height: 55px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-}
-.btn:hover {
-    color: black;
-    background-color: #FCE158;
-    filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
-}
-.btn:active{
-    background: #E2C011;
-    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-}
-
-section {
-    margin-top: 8.8rem;
-    margin-bottom: 8.8rem;
 }
 
 
@@ -301,14 +422,6 @@ section {
 
 /* INTRO HEADER */
 
-.inicioNavBar{
-    color: #FFFFFF;
-    height: 4rem;
-    width: 9.2rem;
-    background: #394273;
-    border-radius: 3.6rem;
-    padding: 1rem 2rem;
-}
 .backgroundDivHeader{
     height: 115vh;
     background-image: url(../img/headerBack.svg);
@@ -321,10 +434,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-}
-.containerNavHeader{
-    display: flex;
-    justify-content: flex-end;
 }
 .divContainerHeader{
     width: 100vw;
@@ -344,7 +453,7 @@ section {
     margin-bottom: 4rem;
 }
 .titulosHeader h1{
-    color: #278B96;
+    color: #394273;
 }
 .titulosHeader h3{
     font-style: normal;
@@ -690,50 +799,6 @@ select {
 }
 
 
-/* FOOTER */
-
-ul {
-    margin: 0;
-}
-
-.footerFondo{
-    background-image: url(../img/Footer_1.svg);
-    padding: 15rem 0rem 8rem 0rem;
-    margin-top: 7.4rem;
-    background-repeat: none;
-    background-size: cover;
-}
-.rrss {
-    font-size: 3rem;
-    color: white;
-    text-decoration: none;
-    margin-top: 3.2rem;
-    padding: 0rem 1rem 0rem 1rem;
-}
-.footerLink {
-    align-items: center;
-    margin-top: 5.4rem;
-}
-.footerLink li {
-    text-decoration: none;
-    font-style: none;
-    list-style: none;
-    color: white;
-    font-size: 20px;
-    line-height: 24px;
-    display: inline;
-    padding: 0rem 2rem 0rem 2rem;
-}
-.footerLink a {
-    color: white;
-    font-size: 20px;
-    line-height: 24px;
-}
-.linkActivo {
-    font-weight: 500;
-}
-
-
 
 /*--------------------------------------- SECCION CIUDADES --------------------------------------*/ 
 
@@ -1051,7 +1116,7 @@ color: #394273;
     height: 100vh;
     background-size: contain;
 }
-.quienesEquipo h2 {
+#quienesEquipo h2 {
     color: #394273;
     transform: translateY(-100%);
 }
@@ -1079,6 +1144,94 @@ color: #394273;
     color: #7C7C7C;
 }
 
+@media (min-width: 300px) and (max-width: 414px) {
+    .headerQuienes {
+        height: 60vh;
+    }
+    .headerImg {
+        height: 25vh;
+        object-fit: contain;
+        background-size: contain;
+        transform: translateX(15%);
+    }
+    .headerImg .quienesIntro {
+        transform: translateX(-15%);
+    }
+    .quienesFormas {
+        background-size: 40%;
+        margin-bottom: 12rem;
+    }
+    .quienesFormasTxt .p--4 {
+        transform: translateY(-15%);
+    }
+    .quienesDegradeTxt-izq {
+        color: white;
+        padding: 3rem 0rem 3rem 0;
+    }
+    .quienesDegradeTxt-der {
+        color: white;
+        padding: 3rem 0rem 3rem 0;
+    }
+    .quienesDegradeIzq {
+        background: linear-gradient(130.1deg, rgba(39, 139, 150, 0.7) 29.83%, rgba(139, 217, 150, 0.7) 75.33%);
+        background-size: contain;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        margin-top: 0;
+    }
+    .quienesDegradeDer {
+        background: linear-gradient(141.81deg, rgba(121, 139, 242, 0.7) 18.22%, rgba(243, 154, 0, 0.7) 72.55%);
+        background-size: contain;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        margin-bottom: 0rem;
+    }
+    .fondoOnda {
+        height: 60vh;
+        background-size: cover;
+        background-position-x: left;
+    }
+    #quienesEquipo {
+        margin-top: 16vh;
+        overflow-y:scroll;
+        height: auto;
+    }
+    #quienesEquipo h2 {
+        transform: translateY(0%);
+    }
+    .quienesEquipo-caja {
+        background: none;
+        box-shadow: none;
+        border-radius: none;
+        display: flex;
+        padding: 0;
+        margin-top: 14rem;
+        justify-content:start;
+        height: 45vh;
+    }
+    .quienesEquipo-caja .equipoMiembro {
+        align-self: center;
+        justify-self: center;
+        transform: translateY(0%);
+        padding: 0 0 0 0;
+    }
+    .call-to-action {
+        margin: 2vh 0 2vh 0;
+    }
+    .call-to-action h2 {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 414,01px) and (max-width: 800px) {
+    .headerImg {
+
+    }
+}
+
+
 
 /* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
 
@@ -1092,6 +1245,7 @@ color: #394273;
     background-size: contain;
     object-fit: contain;
     height:85vh;
+    width: 100vw;
     background-position-x: right;
     background-position-y: top;
 }
@@ -1176,22 +1330,61 @@ color: #394273;
     color: #394273;
 }
 
-@media (min-width: 320px) and (max-width: 414px) {
-    .headerImg {
-        height: 25vh;
+@media (min-width: 300px) and (max-width: 414px) {
+    .headerHacemos {
+        height: 70vh;
+        margin-bottom: 4rem;
+    }
+    .headerHacemosImg {
+        background-image: url(../img/hacemosfondo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
         object-fit: contain;
+        height:60vh;
+        width: 100vw;
+        background-position-x: right;
+        background-position-y: top;
     }
-    .quienesDegradeTxt-izq {
-        color: white;
-        padding: 10rem 8rem 10rem 0;
+    .divContainerHeader{
+        width: 100vw;
+        height: 40rem;
+        margin-top: 4.7rem;
     }
-    .quienesDegradeTxt-der {
-        color: white;
-        padding: 10rem 0rem 10rem 8rem;
+    .divContainerHeaderTexto{
+        margin-left: 2rem;
     }
-}
-@media (min-width: 414,01px) and (max-width: 800px) {
-    .headerImg {
-
+    .containerParrafoBotonHeader p {
+        display: none;
+    }
+    .titulosHeader {
+        width: 80vw;
+        height: 17.7rem;
+        margin-bottom: 4rem;
+    }
+    .containerParrafoBotonHeader {
+        margin-top: 0rem;
+    }
+    .containerParrafoBotonHeader .btn-intro {
+        margin-top: -8rem;
+        margin-bottom: 12rem;
+    }
+    .hacemosCamino h4 {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .scrollCamino {
+        display: none;
+    }
+    .hacemosCamino {
+        text-align: center;
+    }
+    .hacemosCamino div img {
+        height: 20rem;
+        margin: 3.2rem 0 3.2rem 0;
+    }
+    .callHacemos {
+        padding-top: 10.4rem;
     }
 }
