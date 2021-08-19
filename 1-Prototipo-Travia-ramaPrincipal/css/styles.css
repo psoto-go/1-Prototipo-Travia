@@ -69,7 +69,7 @@ h1 {
     font-size: 3rem;
     line-height: 3.6rem;
     color: #394273;
-    text-align: center;
+    text-align: left;
 }
 /* INDEX */
 .btn-subir{
@@ -106,7 +106,7 @@ h1 {
 }
 
 .divContainerHeaderTexto{
-    margin-left: 1.2rem;
+    /* margin-left: 1.2rem; */
 }
 .btn-intro{
     background-color: #F2CD13;
@@ -379,6 +379,7 @@ color: #000000;
 
 .form-input {
     padding-bottom: 0.8rem;
+    align-items: baseline;
 }
 
 .btn-contacto {
@@ -726,7 +727,7 @@ height: 40px;
     background: #31364F;
 }
 .backgroundDivHeader{
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/headerBack.svg);
     background-repeat: no-repeat;
     background-position: 48.8rem 13.2rem;
@@ -740,6 +741,7 @@ height: 40px;
     background-size: 110rem;
     height: 137vh;
 }
+
 .headerIndex {
     height: 110vh;
     background-image: url(../img/Ellipse\ 146.svg);
@@ -761,6 +763,8 @@ height: 40px;
 }
 .divTextoHeader{
     margin-left: 0;
+    position: relative;
+    top: -72rem;
 }
 .titulosHeader{
     width: 63rem;
@@ -1669,5 +1673,8 @@ color: #394273;
 }
 .btnHablemosCiudades{
     margin: 3rem auto 0 auto;
+    position: relative;
+    left: 0rem;
 }
+
 }
