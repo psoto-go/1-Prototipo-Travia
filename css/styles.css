@@ -19,7 +19,7 @@ header {
     font-weight: normal;
 }
 
-header nav {
+header .navbar {
     font-size: 2rem !important;
     color: #6A6A6A;
     padding: 1.6rem;
@@ -34,20 +34,6 @@ header nav img {
     height: 6.5rem;
     width: 6.5rem;
     object-fit:contain;
-}
-
-.btn-subir{
-    position: fixed;
-    left: 93%;
-    bottom: 0%;
-    
-}
-.hidden{
-    visibility: hidden;
-}
-
-.active {
-    color: #6A6A6A !important;
 }
 
 .navLink{
@@ -83,6 +69,19 @@ header nav img {
 
 #page-current:hover {
     color: white;
+}
+
+.btn-subir{
+    position: fixed;
+    left: 93%;
+    bottom: 0%;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.active {
+    color: #6A6A6A !important;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -211,18 +210,21 @@ ul {
     font-style: none;
     list-style: none;
     color: white;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
     display: inline;
     padding: 0rem 2rem 0rem 2rem;
 }
 .footerLink a {
     color: white;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
 }
 .linkActivo {
     font-weight: 500;
+}
+footer article div img {
+    height: 5rem;
 }
 
 
@@ -258,53 +260,65 @@ ul {
 @media (min-width: 300px) and (max-width: 414px)  {
     h1 {
         font-weight: 600;
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 3rem;
+        line-height: 3.6rem;
     }
     h2 {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
     h3 {
         font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
     }
     h4 {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
     h5 {
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
     }
     h6 {
 
     }
     .p--1 {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
         text-align: justify;
     }
     .p--2 {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
     }
     .p--3 {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
     .p--4 {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
         text-align: justify;
     }
     .p--5 {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    header .navbar {
+        font-size: 2rem !important;
+        color: #394273;
+        padding: 1.6rem;
+        height: 8rem;
+    }
+    .collapse.navbar-collapse {
+        background-color: white;
+        width: 100%;
+        top: 0;
+        z-index: 100;
     }
     body header article nav div img {
         height: 5vh;
@@ -315,9 +329,19 @@ ul {
     }
     .btn {
         font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         width: 26rem;
+    }
+    .btn-subir {
+        width: 5.4rem;
+        height: 5.4rem;
+        position: fixed;
+        left: 82%;
+    }
+    .footerLink {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
     }
     footer article div img {
         height: 4.8rem;
@@ -326,16 +350,16 @@ ul {
         font-size: 1.6rem;
     }
     .footerLink ul li, .footerLink ul li a {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
         padding: 0rem 0.5rem 0rem 0.5rem;
     }
-    .footerLink--2 ul li {
+    .footerLink .footerLink--2 li {
         display: block;
     }
     .navbar ul li a {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
     .navbar ul li a :active {
         font-weight: bold;
@@ -499,7 +523,7 @@ ul {
 }
 .index-hablemos--lista {
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 5.5rem;
 }
 .divBackgroundImg{
     background-image: url(../img/Ellipse\ 150.svg);
@@ -560,7 +584,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40px;
+    top: 4rem;
     z-index: 1;
 }
 .cardAzul h2{
@@ -1145,6 +1169,14 @@ color: #394273;
 }
 
 @media (min-width: 300px) and (max-width: 414px) {
+    .quienessomos.quienesTxt, .quienessomos.quienesDegradeTxt, .quienessomos.call-to-action {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .quienessomos .quienesFormasTxt {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
     .headerQuienes {
         height: 60vh;
     }
@@ -1220,8 +1252,8 @@ color: #394273;
     }
     .call-to-action h2 {
         font-weight: 500;
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 }
 
@@ -1280,6 +1312,9 @@ color: #394273;
 .camino-2 {
     margin: 16rem 0rem 16rem 0rem;
 }
+.camino-2-mobile {
+    display: none;
+}
 .hacemosCamino h4 {
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -1292,6 +1327,19 @@ color: #394273;
 }
 .scrollCamino {
     justify-items: center;
+    display: none;
+}
+.scrollCirculo {
+    justify-items: center;
+    align-items: center;
+}
+.scrollLinea {
+    width: 1.5rem;
+    height: 16rem;
+    background: rgba(39, 139, 150, 0.3);
+    border-radius: 2rem;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
 }
 .scrollCirculoInicio {
     width: 10rem;
@@ -1299,7 +1347,7 @@ color: #394273;
     border: 2rem solid #BEDCDF;
     border-radius: 100%;
 }
-.scrollCirculo {
+.scrollCirculoMedio {
     width: 10rem;
     height: 10rem;
     border: 2rem solid #BEDCDF;
@@ -1331,18 +1379,22 @@ color: #394273;
 }
 
 @media (min-width: 300px) and (max-width: 414px) {
+    .quehacemos.hacemosCamino, .quehacemos.call-to-action {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
     .headerHacemos {
-        height: 70vh;
+        height: 60vh;
         margin-bottom: 4rem;
     }
     .headerHacemosImg {
         background-image: url(../img/hacemosfondo.svg);
         background-repeat: no-repeat;
-        background-size: contain;
-        object-fit: contain;
-        height:60vh;
+        background-size:cover;
+        object-fit:fill;
+        height:100%;
         width: 100vw;
-        background-position-x: right;
+        background-position-x: center;
         background-position-y: top;
     }
     .divContainerHeader{
@@ -1357,16 +1409,33 @@ color: #394273;
         display: none;
     }
     .titulosHeader {
-        width: 80vw;
+        width: 60vw;
         height: 17.7rem;
         margin-bottom: 4rem;
+    }
+    .headerHacemos .titulosHeader {
+        transform:translateY();
+    }
+    .headerHacemos .titulosHeader h3 {
+        width: 30vw;
     }
     .containerParrafoBotonHeader {
         margin-top: 0rem;
     }
     .containerParrafoBotonHeader .btn-intro {
-        margin-top: -8rem;
+        margin-top: -2rem;
         margin-bottom: 12rem;
+        padding-left: 2.6rem;
+        padding-right: 2.6rem;
+        width: 14.8rem;
+    }
+    .camino {
+        margin-top: 16vh;
+    }
+    .fondoCamino2 {
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
     }
     .hacemosCamino h4 {
         margin-bottom: 2rem;
@@ -1374,8 +1443,11 @@ color: #394273;
         font-size: 2rem;
         line-height: 2.4rem;
     }
-    .scrollCamino {
+    .scrollCirculo {
         display: none;
+    }
+    .scrollCamino {
+        display: contents;
     }
     .hacemosCamino {
         text-align: center;
@@ -1386,5 +1458,11 @@ color: #394273;
     }
     .callHacemos {
         padding-top: 10.4rem;
+    }
+    .camino-2-mobile {
+        display: contents;
+    }
+    .camino-2 {
+        display: none;
     }
 }
