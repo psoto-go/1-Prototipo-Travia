@@ -583,7 +583,7 @@ footer article div img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 60vh;
+    height: 75vh;
 }
 .imagenBCKcards{
     height: 128vh;
@@ -699,6 +699,7 @@ footer article div img {
     margin-bottom: 0;
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100vh;
 }
 .divTituloVector{
     margin-top: 23.6rem;
