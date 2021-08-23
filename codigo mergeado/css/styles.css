@@ -1,0 +1,1977 @@
+/* GENERALES */
+
+html{
+    font-size: 62.5%; 
+    /* 1 rem = 10px */
+}
+
+body{
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+header .navbar {
+    font-size: 2rem !important;
+    color: #6A6A6A;
+    padding: 1.6rem;
+    height: 15rem;
+}
+
+.bg-light {
+    background-color: transparent;
+}
+
+header nav img {
+    height: 6.5rem;
+    width: 6.5rem;
+    object-fit:contain;
+}
+
+.navLink{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #394273;
+    margin: 2.5rem;
+}
+
+.navLinkB{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #394273;
+    margin: 1rem 0;
+}
+
+.navLink:hover{
+    font-weight: 500;
+    color: #394273;
+    text-decoration: none;
+}
+
+.containerNavHeader{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#page-current:hover {
+    color: white;
+}
+
+.btn-subir{
+    position: fixed;
+    left: 90%;
+    bottom: 7%;
+    z-index: 100;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.active {
+    color: #6A6A6A !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 6.8rem;
+    color: #394273;
+}
+
+.bajada {
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    }
+
+h2 {
+    font-size: 3rem;
+    font-weight:normal;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight:500;
+    line-height: 3.6rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 3rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 3rem;
+}
+
+h6 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 3rem;
+}
+
+.p--1 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.p--2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.p--3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.p--4 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+section {
+    margin-top: 8.8rem;
+    margin-bottom: 8.8rem;
+}
+
+
+
+/* FOOTER */
+
+ul {
+    margin: 0;
+}
+
+.footerFondo{
+    background-image: url(../img/Footer_1.svg);
+    padding: 15rem 0rem 8rem 0rem;
+    margin-top: 7.4rem;
+    background-repeat: none;
+    background-size: cover;
+}
+.rrss {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 3.2rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+.rrss:hover {
+    color: #394273;
+}
+.rrss:active {
+    color: #31364F;
+}
+.footerLink {
+    align-items: center;
+    margin-top: 5.4rem;
+}
+.footerLink li {
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    display: inline;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.footerLink a {
+    color: white;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+.linkActivo {
+    font-weight: 500;
+}
+footer article div img {
+    height: 5rem;
+}
+
+
+
+/* BOTONES */
+
+.btn {
+    background-color: #F2CD13;
+    color:#000000;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 320px;
+    height: 55px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+    color: black;
+    background-color: #FCE158;
+    filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+}
+.btn:active{
+    background: #E2C011;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+
+
+/* ---------------------------------- RESPONSIVE DE COMPONENTES GENERALES ---------------------------------- */
+
+@media (max-width: 800px) {
+    h1 {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+    .bajada {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    h2 {
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    h4 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    h5 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    h6 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .p--1 {
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .p--2 {
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .p--3 {
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .p--4 {
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    header .navbar {
+        font-size: 2rem !important;
+        color: #394273;
+        padding: 1.6rem;
+        height: 8rem;
+    }
+    .collapse.navbar-collapse {
+        background-color: white;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+    body header article nav div img {
+        height: 5vh;
+    }
+    section {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .btn {
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        width: 26rem;
+    }
+    .btn-subir--svg {
+        width: 6.4rem;
+        height: 6.4rem;
+        position: fixed;
+        left: 82%;
+        bottom: 3%;
+        z-index: 100;
+    }
+    .footerLink {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    footer article div img {
+        height: 4.8rem;
+    }
+    .rrss {
+        font-size: 1.6rem;
+    }
+    .footerLink ul li, .footerLink ul li a {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+    }
+    .footerLink .footerLink--2 li {
+        display: block;
+    }
+    .navbar ul li a {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .navbar ul li a :active {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #394273;
+    }
+    .containerNavHeader {
+        justify-content: center;
+        text-align: center;
+    }
+    .inicioNavBar:hover{
+        background: none;
+        color: #394273 !important;
+        filter: none
+    }
+}
+
+@media (min-width: 414,01px) and (max-width: 799.9px) {
+    body header article nav div img {
+        height: 8vh;
+    }
+}
+
+@media (min-width: 800px) {
+    .inicioNavBar{
+        color: #FFFFFF;
+        height: 4rem;
+        width: 9.2rem;
+        background: #394273;
+        border-radius: 3.6rem;
+        padding: 1rem 2rem;
+    }
+    .inicioNavBar:hover{
+            background: rgba(147, 156, 209, 0.53);
+            color: white;
+            filter: drop-shadow(0px 4px 8px rgba(9, 44, 76, 0.24));
+    }
+    .inicioNavBar:active{
+        background: #31364F;
+    } 
+}
+
+.navbar-toggler {
+    border-style: none;
+}
+
+
+
+/*-------------------------------------- INDEX --------------------------------------*/
+
+/* INTRO HEADER */
+
+.backgroundDivHeader{
+    height: 115vh;
+    background-image: url(../img/headerBack.svg);
+    background-repeat: no-repeat;
+    background-position: 48.8rem 13.2rem;
+    background-size: 88rem 49rem;
+}
+.headerIndex {
+    background-image: url(../img/fondoIndex.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.divContainerHeader{
+    width: 100vw;
+    height: 40rem;
+    margin-top: 4.7rem;
+}
+.containerNavHeader{
+    display: flex;
+    justify-content: center;
+}
+.divContainerHeaderTexto{
+    margin-left: 11.2rem;
+}
+.divTextoHeader{
+    margin-left: 0;
+}
+.titulosHeader{
+    width: 63rem;
+    height: 17.7rem;
+    margin-bottom: 4rem;
+}
+.titulosHeader h1{
+    color: #394273;
+}
+.titulosHeader h3{
+    font-style: normal;
+    font-weight: normal;
+}
+.containerParrafoBotonHeader{
+    width: 63rem;
+    height: 17.7rem;
+}
+.containerParrafoBotonHeader p{
+    color: #4F4F4F;
+}
+.btn-intro {
+    border-radius: 4rem;
+    margin-top: 1.6rem;
+}
+.btnProgramarLlamada{
+    width: 20rem;
+}
+.divProgramarLLamada{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SECCION PARTNERS */
+
+.imgPartners{
+    width: 37rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+    object-fit: contain;
+}
+.h2Partners {
+    color: #394273;
+}
+
+
+/* SECCION HABLEMOS */
+
+.index-hablemos {
+    background-image: url(../img/fondoHablemos-index.svg);
+    background-repeat: no-repeat;
+    height: 110vh;
+    background-size: cover;
+}
+.index-hablemos--bloque {
+    padding-top: 15vh;
+}
+.index-hablemos--lista {
+    display: flex;
+    margin-bottom: 5.5rem;
+    color: black;
+}
+.divBackgroundImg{
+    background-image: url(../img/Ellipse\ 150.svg);
+    background-repeat: no-repeat;
+    margin-left: 13rem;
+    display: block;
+}
+.index-hablemos--lista {
+    display: flex;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.lista-check {
+    font-size: 6rem;
+    color: #798BF2;
+    display: inline;
+    margin-right: 4rem;
+}
+.btn-hablemos {
+    background-color:#F2CD13;
+    color:#000000;
+    border-radius: 0.8rem;
+    border-style: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 20.9rem;
+    height: 4.4rem;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    margin: 0 0 0 13rem;
+}
+.lista-txt {
+    display: inline;
+}
+.divTextoHablemos{
+    margin-right: 13rem;
+}
+
+
+/* SECCION CARDS */
+.sectionCards{
+    background-image: url(../img/fondodesktop-ciudades.svg);
+    background-repeat: no-repeat;
+    background-size: 74rem;
+    background-position: center;
+}
+.containerCardsIndex{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 7rem;
+}
+.h2Cards{
+    color: #394273;
+}
+.index-card {
+    padding: 2.5rem;
+}
+.cardAzul{
+    height: 40rem;
+    width: 32.3rem;
+    background: #278B96;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(10%);
+    z-index: 25;
+    margin: 0 -1.5rem 0 -1.5rem;
+}
+.cardAzul p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+.cardAzul h3{
+    text-align: center; 
+    color: #FFFFFF;
+}
+.cardBlanca{
+    height: 40rem;
+    width: 32.3rem;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* .cardBlanca:first-child{
+    position: relative;
+    right: 314px;
+}
+.cardBlanca:last-child{
+    position: absolute;
+    left: 731px;
+} */
+.cardBlanca p{
+    text-align: center;
+    color: rgba(57, 66, 115, 0.9);
+}
+.cardBlanca h3{
+    text-align: center;
+    color: black;
+}
+
+
+/* SECCION VECTOR GRANDE */
+.sectionVectorGrande{
+    background-image: url(../img/fondoCollapsable-index.svg);
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    height: 135vh;
+    background-size: cover;
+}
+.divTituloVector{
+    margin-top: 23.6rem;
+    /* margin-left: 5.4rem; */
+    padding: 0 6rem 0 6rem;
+    width: 60%;
+}
+.h3VectorGrande{
+    color: #394273;
+}
+.divContainerDivsVector{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cajaMasInfoVectorGrande{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid white;
+    width: 47.5rem;
+    padding: 0 0 1rem 0;
+    margin-top: 2.8rem;
+}
+.elementosGraficos{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    width: 30rem;
+}
+.elementosGraficos h3{
+    margin-left: 3rem;
+}
+.cajaMasInfoVectorGrande button{
+    border-radius: 100px;
+    width: 5rem;
+    font-size: 3rem;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid white;
+}
+.cajaMasInfoVectorGrande p{
+    color: #FFFFFF;
+    padding-left: 1.5rem;
+}
+
+
+/* SECCION CONTACTO */
+.index-contacto{
+    margin-top: 0;
+}
+.contacto-txt {
+    align-content: center;
+}
+.fondo {
+    background-color: #F1CC33;
+    height: 20rem;
+    color: white;
+}
+.p-contacto {
+    color: black;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.index-contacto h3 {
+    color: black;
+}
+.contacto-form {
+    margin-top: 8rem;
+}
+.form-input {
+    padding-bottom: 0.8rem;
+    align-items: baseline;
+}
+.btn-contacto {
+    margin-top: 3.2rem;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* appearance: none;       Remove default arrow */
+    /* background-image: url(...);   Add custom arrow  */
+    height: 50px;
+}
+.form-control {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 2rem;
+    background-color: white;
+    color: #4f4f4f;
+    width: 100%;
+}
+#inputState {
+    display: block;
+    appearance: none;
+}
+.form-select{
+    font-size: 1.6rem;
+    width: 100%;
+    height: 4.2rem;
+    color: #4f4f4f;
+    border: 1px solid #BDBDBD;
+    font-weight: 400;
+    border-radius: 4rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+.btn-contacto {
+    background-color: #F2CD13;
+    color:#000000;
+    border-radius: 8rem;
+    border-style: none;
+    font-size: 1.8rem;
+    font-weight: normal;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.formMobile{
+    align-items: baseline; display: flex;
+}
+
+/* SECCION SUSCRIPCION */
+.index-suscripcion{
+    margin-top: 3rem;
+}
+.suscripcion-txt {
+    align-content: center;
+    display: block;
+}
+.form-suscripcion {
+    border: 2px solid #585858;
+    box-sizing: border-box;
+    border-radius: 35px;
+    width: 314px;
+    height: 44px;
+    margin: 0 auto;
+}
+.form-controlSub{
+    width: 194px;
+    height: 39px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 35px;
+    font-size: 1.6rem;
+}
+.btn-suscripcion{
+    background: #798BF2;
+    border-radius: 50px;
+    width: 96px;
+    height: 40px;
+    margin-right: 2.3rem;
+    position: relative;
+    left: 20rem;
+    top: -3.9rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+@media (max-width: 800px) {
+    .btn-subir{
+        display: none;
+    }
+    .cajaMasInfoVectorGrande{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid white;
+        width: 37.5rem;
+        padding: 0 0 1rem 0;
+        margin-top: 2.8rem;
+    }
+    .index-hablemos {
+        background-image: url(../img/fondoHablemos-index.svg);
+        background-repeat: no-repeat;
+        height: 52vh;
+        background-size: cover;
+    }
+    .headerIndex {
+        height: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 100vw
+    }
+    .titulosHeader{
+        width: 62.5rem;
+        height: 25.7rem;
+        margin-bottom: 4rem;
+    }
+    .divBackgroundImg{
+        display: none;
+    }
+    .lista-check {
+        font-size: 4.2rem;
+    }
+    .sectionCards{
+        background-image: url(../img/fondomobile-ciudades.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 135vh;
+    }
+    .containerCardsIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        margin-top: 7rem;
+    }
+    .cardAzul{
+        width: 199px;
+        height: 246.44px;
+        background: #278B96;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(0%);
+        margin: 1rem 0 1rem 0;
+    }
+    .cardAzul h3{
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .cardAzul p{
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .cardBlanca{
+        width: 199px;
+        height: 246.44px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 1rem 0;
+    }
+    .cardBlanca h3{
+        text-align: center;
+        color:black;
+    }
+    .cardBlanca p{
+        text-align: center;
+        color: rgba(57, 66, 115, 0.9);
+    }
+    .sectionVectorGrande{
+        background-repeat: no-repeat;
+        height: 160vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .divTituloVector{
+        margin-top: -3.4rem;
+    width: 100%;
+    margin-bottom: -2rem;
+}
+    .displayFlexContainerPadre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .divContainerDivsVector {
+        margin-top: 0rem;
+    }
+    .p-contacto {
+        padding: 0 2rem 0 2rem ;
+    }
+    .btn-contacto {
+        width: 100%;
+    }
+    .h2VectorGrande{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .cajaMasInfoVectorGrande{
+        width: 20.5rem;
+        padding: 0 0 1rem 0;
+        margin-top: 2.8rem;
+    }
+
+}
+
+
+/*--------------------------------------- SECCION CIUDADES --------------------------------------*/ 
+
+/* HEADER NAVBAR */
+.headerCiudades{
+    height: 100vh;
+    background: url(../img/calm-clouds-summer-turquoise-majorca-ocean\ 3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.headerCiudadesMurcia{
+    height: 100vh;
+    background: url(../img/calm-clouds-summer-turquoise-majorca-ocean\ 3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.headerCiudadesAsturias{
+    height: 100vh;
+    background: url(../img/asturias.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.headerCiudadesCanarias{
+    height: 1000vh;
+    background: url(../img/islasCanarias.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.divContainerBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 108rem;
+}
+
+.iniciarSesion{
+    color: white !important; 
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+.iniciarSesion:hover{
+    text-decoration: none;
+        color: white;
+}
+.navLinkCiudades{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin: 2.5rem;
+}
+.distintoCiudades{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: white;
+    margin: 2.5rem;
+}
+.navLinkCiudades:hover{
+        text-decoration: none;
+}
+.ulSesion li{
+    margin: 0 2rem;
+}
+.Registrarse{
+    color: #6A6A6A ;
+}
+.Registrarse:hover{
+    text-decoration: none;
+}
+
+
+
+/* HEADER CONTENIDO */
+.divPrincipalTitulo{
+    height: 60vh;
+}
+.divSecundarioTitulo{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2CiudadesHeader{
+    color: #FFFFFF;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6.8rem;
+    font-size: 5.6rem;
+    line-height: 6.8rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.divSecundarioTitulo p{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+
+/*-------------------------------------- SECTION FILTROS */
+.containerFiltrosUl{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.containerFiltrosUl li{
+    margin: 0 auto;
+    list-style: none;
+    height: 5.1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2.2rem;
+    /* or 124% */
+    text-align: center;
+    color: rgba(57, 66, 115, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerFiltrosUl li:hover{
+    color: #394273;
+}
+.containerFiltrosUl li a{
+    text-decoration: none;
+    color: rgba(57, 66, 115, 0.5);
+}
+.containerFiltrosUl li a:hover{
+    color: #394273;
+}
+.containerPFiltros{
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 5rem;
+}
+.containerPFiltros p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.containerBackgroundImageFiltrosMallorca{
+    background-image: url(../img/Ilus\ hombre\ vacaciones\ ordenador.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* CARDS CIUDADES */
+.sectionCardsCiudades{
+    margin-top: 5rem;
+}
+.ciudaesCards{
+    margin-top: 20rem;
+}
+.h2CardsCiudades{
+    position: relative;
+    top: -8rem;
+}
+.pCardsCiudades{
+    position: relative;
+    top: -6rem;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #394273;
+}
+.sectionVectorGrandeMallorca{
+    background-image: url(../img/Rectangle\ 298.svg);
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: -55rem -7rem;
+    background-size: 211rem;
+}
+.cajaMasInfoVectorGrandeMallorca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-bottom: 1px solid #394273;
+    margin-top: 2.8rem;
+}
+.cajaMasInfoVectorGrandeMallorca h3{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #394273;
+
+}
+.cajaMasInfoVectorGrandeMallorca button{
+    border-radius: 100px;
+    width: 31.54px;
+    height: 31.54px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #394273;
+    border: 0.5px solid #394273;
+}
+.pVectorGrandeMallorca{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+
+}
+.h2HablemosCiudades{
+    font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #394273;
+}
+.pHablemosCiudades{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #394273;
+}
+.btnHablemosCiudades{
+    position: relative;
+    left: -2rem;
+}
+
+
+
+/* HEADER CONTENIDO */
+.divPrincipalTitulo{
+    height: 60vh;
+}
+.divSecundarioTitulo{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2CiudadesHeader{
+    color: #FFFFFF;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6.8rem;
+}
+.divSecundarioTitulo p{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+}
+
+/*-------------------------------------- SECTION FILTROS */
+.containerFiltrosUl{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 9rem;
+}
+.containerFiltrosUl li{
+    margin: 0 26px;
+    list-style: none;
+    height: 5.1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2.2rem;
+    /* or 124% */
+    text-align: center;
+    color: rgba(57, 66, 115, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerFiltrosUl li:hover{
+    color: #394273;
+}
+.containerFiltrosUl li a{
+    text-decoration: none;
+    color: rgba(57, 66, 115, 0.5);
+
+}
+.containerFiltrosUl li a:hover{
+    color: #394273;
+    border-bottom: 4px solid #394273;;
+}
+.containerPFiltros{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+.containerPFiltros p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #000000;
+}
+.containerBackgroundImageFiltrosMallorca{
+    background-image: url(../img/Ilus\ hombre\ vacaciones\ ordenador.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.sectionFiltrosMallorca{
+    border-bottom: 1px solid rgba(147, 156, 209, 0.53);
+}
+
+
+/* ------------------- */
+
+.sectionVectorGrandeMallorca{
+    background-image: url(../img/Rectangle\ 298.svg);
+    height: 133vh;
+    background-size: 270rem;
+}
+.cajaMasInfoVectorGrandeMallorca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-bottom: 1px solid #394273;
+    width: 47.5rem;
+    padding: 0 0 1rem 0;
+    margin-top: 2.8rem;
+}
+.cajaMasInfoVectorGrandeMallorca h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #000000;
+}
+.cajaMasInfoVectorGrandeMallorca button{
+    border-radius: 100px;
+    width: 5rem;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #394273;
+    border: 0.5px solid #394273;
+}
+.pVectorGrandeMallorca{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #000000;
+}
+.divContainerDivsVectorCiudades{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* GOOGLE MAPS */
+.div1Maps{
+    width: 128rem;
+    height: 19.9rem;
+    background-color: rgba(239, 239, 239, 0.51);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.div1Maps h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    color: #000000;
+}
+.div1Maps p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #000000;
+}
+.maps{
+    padding: 0;
+}
+.h2HablemosCiudades{
+    font-style: normal;
+font-weight: 500;
+font-size: 4.8rem;
+line-height: 5.8rem;
+color: #394273;
+}
+.pHablemosCiudades{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    width: 63.2rem;
+    margin: 3rem auto 0 auto;
+    color: #394273;
+}
+.btnHablemosCiudades{
+    margin: 3rem auto 0 auto;
+    position: relative;
+    left: 0rem;
+}
+
+
+/*-------------------------------------- PAGINA QUIENES SOMOS --------------------------------------*/
+
+/* HEADER */
+.headerQuienes {
+    background-color: #F0FAF1;
+    height: 100vh;
+}
+.headerImg {
+    background-image: url(../img/headerQuienes.svg);
+    height: 60vh;
+    object-fit: contain;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.quienesIntro {
+    align-self: center;
+}
+
+/* SECCION PARRAFO/FORMAS */
+.quienesFormas {
+    background-image: url(../img/formas-quienes.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 29rem;
+    margin-bottom: 20rem;
+}
+.quienesFormasTxt {
+    transform: translateY(45%);
+}
+
+/* SECCION CONTENEDORES DEGRADE */
+.quienesDegradeIzq {
+    background-image: url(../img/forma_gradiente1-quienes.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-top: 25rem;
+}
+.quienesDegradeDer {
+    background-image: url(../img/forma_gradiente2-quienes.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin-bottom: 25rem;
+}
+.quienesDegradeTxt-izq {
+    color: white;
+    padding: 10rem 16rem 10rem 0;
+}
+.quienesDegradeTxt-izq .p--1 {
+    color: white;
+}
+.quienesDegradeTxt-der {
+    color: white;
+    padding: 10rem 0rem 10rem 16rem;
+}
+.quienesDegradeTxt-der .p--1 {
+    color: white;
+}
+
+/* SECCION EQUIPO */
+.fondoOnda {
+    margin-top: 25rem;
+    margin-bottom: -8rem;
+    background-image: url(../img/fondo-onda.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+}
+#quienesEquipo h2 {
+    color: #394273;
+    transform: translateY(-100%);
+}
+.quienesEquipo-caja {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    display: flex;
+    padding: 0;
+    margin-top: 20rem;
+    justify-content: center;
+    height: 40vh;
+    transform: translateY(-25%);
+}
+.quienesEquipo-caja .equipoMiembro {
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-20%);
+}
+.quienesEquipo-caja h5 {
+    color: #394273;
+    margin: 1.6rem 0 4.8rem 0;
+}
+.quienesEquipo-caja .p--2 {
+    color: #7C7C7C;
+}
+
+@media (min-width: 300px) and (max-width: 414px) {
+    .quienessomos.quienesTxt, .quienessomos.quienesDegradeTxt, .quienessomos.call-to-action {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .quienessomos .quienesFormasTxt {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    .headerQuienes {
+        height: 60vh;
+    }
+    .headerImg {
+        height: 25vh;
+        object-fit: contain;
+        background-size: contain;
+        transform: translateX(15%);
+    }
+    .headerImg .quienesIntro {
+        transform: translateX(-15%);
+    }
+    .quienesFormas {
+        background-size: 40%;
+        margin-bottom: 12rem;
+    }
+    .quienesFormasTxt .p--4 {
+        transform: translateY(-15%);
+    }
+    .quienesDegradeTxt-izq {
+        color: white;
+        padding: 3rem 0rem 3rem 0;
+    }
+    .quienesDegradeTxt-der {
+        color: white;
+        padding: 3rem 0rem 3rem 0;
+    }
+    .quienesDegradeIzq {
+        background: linear-gradient(130.1deg, rgba(39, 139, 150, 0.7) 29.83%, rgba(139, 217, 150, 0.7) 75.33%);
+        background-size: contain;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        margin-top: 0;
+    }
+    .quienesDegradeDer {
+        background: linear-gradient(141.81deg, rgba(121, 139, 242, 0.7) 18.22%, rgba(243, 154, 0, 0.7) 72.55%);
+        background-size: contain;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        margin-bottom: 0rem;
+    }
+    .fondoOnda {
+        height: 60vh;
+        background-size: cover;
+        background-position-x: left;
+    }
+    #quienesEquipo {
+        margin-top: 16vh;
+        overflow-y:scroll;
+        height: auto;
+    }
+    #quienesEquipo h2 {
+        transform: translateY(0%);
+    }
+    .quienesEquipo-caja {
+        background: none;
+        box-shadow: none;
+        border-radius: none;
+        display: flex;
+        padding: 0;
+        margin-top: 14rem;
+        justify-content:start;
+        height: 45vh;
+    }
+    .quienesEquipo-caja .equipoMiembro {
+        align-self: center;
+        justify-self: center;
+        transform: translateY(0%);
+        padding: 0 0 0 0;
+    }
+    .call-to-action {
+        margin: 2vh 0 2vh 0;
+    }
+    .call-to-action h2 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 414,01px) and (max-width: 800px) {
+}
+
+
+
+/* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
+
+/* HEADER */
+.headerHacemos {
+    height: 100vh;
+}
+.headerHacemosImg {
+    background-image: url(../img/hacemosfondo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    height:85vh;
+    width: 100vw;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+
+/* SECCION CAMINO */
+.camino {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.fondoCamino1 {
+    background-image: url(../img/caminoFondo1.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.fondoCamino2 {
+    background-image: url(../img/caminoFondo2.svg);
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.fondoCamino3 {
+    background-image: url(../img/caminoFondo3.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.hacemosCamino {
+    align-items: center;
+}
+.camino-2 {
+    margin: 16rem 0rem 16rem 0rem;
+}
+.camino-2-mobile {
+    display: none;
+}
+.hacemosCamino h4 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+}
+.hacemosCamino img {
+    height: 32rem;
+    width: 95%;
+}
+.scrollCamino {
+    justify-items: center;
+    display: none;
+}
+.scrollCirculo {
+    justify-items: center;
+    align-items: center;
+}
+.scrollLinea {
+    width: 1.5rem;
+    height: 16rem;
+    background: rgba(39, 139, 150, 0.3);
+    border-radius: 2rem;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+}
+.scrollCirculoInicio {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+.scrollCirculoMedio {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+.scrollCirculoFinal {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+
+
+
+/* SECCION CALL-TO-ACTION */
+.call-to-action {
+    margin-top: 0rem;
+}
+.callTxt {
+    padding-top: 24rem;
+}
+.callTxt h2 {
+    margin-bottom: 3.4rem;
+    color: #394273;
+}
+.callTxt p {
+    margin-bottom: 1.2rem;
+    color: #394273;
+}
+
+@media (min-width: 300px) and (max-width: 414px) {
+    .quehacemos.hacemosCamino, .quehacemos.call-to-action {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .headerHacemos {
+        height: 60vh;
+        margin-bottom: 4rem;
+    }
+    .headerHacemosImg {
+        background-image: url(../img/hacemosfondo.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        object-fit:fill;
+        height:100%;
+        width: 100vw;
+        background-position-x: center;
+        background-position-y: top;
+    }
+    .divContainerHeader{
+        width: 100vw;
+        height: 40rem;
+        margin-top: 4.7rem;
+    }
+    .divContainerHeaderTexto{
+        margin-left: 2rem;
+    }
+    .containerParrafoBotonHeader p {
+        display: none;
+    }
+    .titulosHeader {
+        width: 60vw;
+        height: 17.7rem;
+        margin-bottom: 4rem;
+    }
+    .headerHacemos .titulosHeader {
+        transform:translateY();
+    }
+    .headerHacemos .titulosHeader h3 {
+        width: 30vw;
+    }
+    .containerParrafoBotonHeader {
+        margin-top: 0rem;
+    }
+    .containerParrafoBotonHeader .btn-intro {
+        margin-top: 0rem;
+        margin-bottom: 12rem;
+        padding-left: 2.6rem;
+        padding-right: 2.6rem;
+        width: 16.8rem;
+    }
+    .camino {
+        margin-top: 16vh;
+    }
+    .fondoCamino2 {
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    .hacemosCamino h4 {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .scrollCirculo {
+        display: none;
+    }
+    .scrollCamino {
+        display: contents;
+    }
+    .hacemosCamino {
+        text-align: center;
+    }
+    .hacemosCamino div img {
+        height: 20rem;
+        margin: 3.2rem 0 3.2rem 0;
+    }
+    .callHacemos {
+        padding-top: 10.4rem;
+    }
+    .camino-2-mobile {
+        display: contents;
+    }
+    .camino-2 {
+        display: none;
+    }
+    .containerParrafoBotonHeader{
+        width: 0rem;
+        height: 17.7rem;
+    }
+}
+/* MOBILE CIUDADES */
+@media (max-width: 800px) {
+/* CIUDADES */
+.headerCiudades{
+    height: 40vh;
+    background: url(../img/calm-clouds-summer-turquoise-majorca-ocean\ 3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.headerCiudadesMurcia{
+    height: 40vh;
+    background: url(../img/calm-clouds-summer-turquoise-majorca-ocean\ 3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.headerCiudadesAsturias{
+    height: 40vh;
+    background: url(../img/asturias.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.headerCiudadesCanarias{
+    height: 40vh;
+    background: url(../img/islasCanarias.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+.divContainerBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLinkCiudades{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin: 2.5rem;
+}
+.distintoCiudades{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: white;
+    margin: 2.5rem;
+}
+.navLinkCiudades:hover{
+        text-decoration: none;
+}
+/* HEADER CONTENIDO */
+.divPrincipalTitulo{
+    height: 20vh;
+}
+.divSecundarioTitulo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2CiudadesHeader{
+    font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.divSecundarioTitulo p{
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.divSecundarioTitulo{
+    height: 26vh;
+}
+.containerFiltrosUl{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.containerFiltrosUl li{
+    margin: 0 auto;
+    list-style: none;
+    height: 5.1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2.2rem;
+    /* or 124% */
+    text-align: center;
+    color: rgba(57, 66, 115, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerFiltrosUl li:hover{
+    color: #394273;
+}
+.containerFiltrosUl li a{
+    text-decoration: none;
+    color: rgba(57, 66, 115, 0.5);
+
+}
+.containerFiltrosUl li a:hover{
+    color: #394273;
+}
+.containerPFiltros{
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 5rem;
+    height: 28rem;
+}
+.containerPFiltros p{
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+}
+.containerFiltrosUl{
+    margin-left: 0rem;
+}
+.sectionVectorGrandeMallorca{
+    background-image: url(../img/Rectangle\ 298.svg);
+    height: 114vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cajaMasInfoVectorGrandeMallorca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-bottom: 1px solid #394273;
+    margin-top: 2.8rem;
+    width: 32rem;
+}
+.cajaMasInfoVectorGrandeMallorca h3{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #394273;
+
+}
+.cajaMasInfoVectorGrandeMallorca button{
+    border-radius: 100px;
+    width: 31.54px;
+    height: 31.54px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #394273;
+    border: 0.5px solid #394273;
+}
+.pVectorGrandeMallorca{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+
+}
+.h2HablemosCiudades{
+    font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #394273;
+}
+.pHablemosCiudades{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #394273;
+width: 34rem;
+}
+}
