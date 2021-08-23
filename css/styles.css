@@ -464,7 +464,10 @@ footer article div img {
     height: 40rem;
     margin-top: 4.7rem;
 }
-
+.containerNavHeader{
+    display: flex;
+    justify-content: center;
+}
 .divContainerHeaderTexto{
     margin-left: 11.2rem;
 }
@@ -499,14 +502,22 @@ footer article div img {
     border-radius: 4rem;
     margin-top: 1.6rem;
 }
+.btnProgramarLlamada{
+    width: 20rem;
+}
+.divProgramarLLamada{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* SECCION PARTNERS */
 
-.index-partners{
-    margin-top: -15rem;
-    margin-bottom: 11rem;
-    z-index: 25;
+.imgPartners{
+    width: 37rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+    object-fit: contain;
 }
 
 
@@ -530,11 +541,33 @@ footer article div img {
     background-repeat: no-repeat;
     margin-left: 13rem;
 }
+.index-hablemos--lista {
+    display: flex;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
 .lista-check {
     font-size: 6rem;
     color: #798BF2;
     display: inline;
     margin-right: 4rem;
+}
+.btn-hablemos {
+    background-color:#F2CD13;
+    color:#000000;
+    border-radius: 0.8rem;
+    border-style: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 20.9rem;
+    height: 4.4rem;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    margin: 0 0 0 13rem;
 }
 .lista-txt {
     display: inline;
@@ -542,40 +575,43 @@ footer article div img {
 .divTextoHablemos{
     margin-right: 13rem;
 }
-.btn-hablemos {
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
-    align-items: center;
-}
 
 
 /* SECCION CARDS */
 .sectionCards{
     background-image: url(../img/Ellipse\ 148.svg);
     background-repeat: no-repeat;
-    background-position: 16.8rem 3.5rem;
+    background-position: 1.8rem 2.5rem;
+    background-size: 21rem;
+}
+.imagenBCKcards{
+    height: 128vh;
+    background-image: url(../img/Ellipse\ 147.svg);
+    background-repeat: no-repeat;
+    background-position: 10.2rem 76.5rem;
+    /* background-position: 16.8rem 3.5rem; */
+    background-size: 21rem;
+    /* height: 106vh;
+    background-position: 64.2rem 34.5rem; */
 }
 .containerCardsIndex{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 100vh;
     margin-top: 7rem;
-}
-.imagenBCKcards{
-    height: 106vh;
-    background-image: url(../img/Ellipse\ 147.svg);
-    background-repeat: no-repeat;
-    background-position: 64.2rem 34.5rem;
 }
 .h2Cards{
     font-style: normal;
     font-weight: 500;
-    font-size: 4.8rem;
-    line-height: 5.8rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
     color: #394273;
 }
 .cardAzul{
-    height: 40rem;
     width: 32.3rem;
+    height: 40rem;
     background: #278B96;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
@@ -598,8 +634,16 @@ footer article div img {
 .cardAzul p{
     font-style: normal;
     font-weight: normal;
-    font-size: 2.3rem;
-    line-height: 2.8rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.cardAzul h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
     text-align: center;
     color: #FFFFFF;
 }
@@ -633,10 +677,18 @@ footer article div img {
 .cardBlanca p{
     font-style: normal;
     font-weight: normal;
-    font-size: 2.3rem;
-    line-height: 2.8rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
     text-align: center;
     color: #000000;
+}
+.cardBlanca h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #394273;
 }
 
 
@@ -662,24 +714,23 @@ footer article div img {
 .h2VectorGrande{
     font-style: normal;
     font-weight: 500;
-    font-size: 4.8rem;
-    line-height: 5.8rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
     color: #394273;
 }
 .pVectorGrande{
     font-style: normal;
     font-weight: normal;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: #FFFFFF;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #000000;
     }
 .divContainerDivsVector{
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
-
 .cajaMasInfoVectorGrande{
     display: flex;
     flex-direction: row;
@@ -690,15 +741,23 @@ footer article div img {
     padding: 0 0 1rem 0;
     margin-top: 2.8rem;
 }
+.elementosGraficos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 30rem;
+}
 .cajaMasInfoVectorGrande i {
     font-size: 4.2rem;
-    color: #5F6B9F;
+    color: white;
 }
 .cajaMasInfoVectorGrande button{
+    border-radius: 100px;
     width: 5rem;
     font-size: 3rem;
-    border-style: none;
     background-color: transparent;
+    color: white;
+    border: 0.5px solid white;
 }
 .cajaMasInfoVectorGrande img {
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
@@ -725,9 +784,14 @@ footer article div img {
     color: white;
 }
 .p-contacto {
-    color: white;
+    color: black;
     margin-top: 1rem;
     padding-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+.index-contacto h2 {
+    color: black;
 }
 .contacto-form {
     margin-top: 8rem;
@@ -777,49 +841,70 @@ select {
     text-align: center;
     padding: 0 2rem;
 }
+.btn-contacto {
+    background-color: #F2CD13;
+    color:#000000;
+    border-radius: 8rem;
+    border-style: none;
+    font-size: 1.8rem;
+    font-weight: normal;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.formMobile{
+    align-items: baseline; display: flex;
+}
 
 /* SECCION SUSCRIPCION */
-
+.index-suscripcion{
+    margin-top: 3rem;
+}
 .suscripcion-txt {
     align-content: center;
     display: block;
-}
-.tituloSuscripcion {
-    margin: 0 0 2.2rem 0;
 }
 .form-suscripcion {
     border: 2px solid #585858;
     box-sizing: border-box;
     border-radius: 35px;
-    width: 386px;
-    height:55px;
+    width: 314px;
+height: 44px;
     margin: 0 auto;
-    margin-top: 3.2rem;
 }
 .form-controlSub{
-    width: 386px;
-    height:50px;
+    width: 194px;
+    height: 39px;
     border: none;
     box-sizing: border-box;
     border-radius: 35px;
     font-size: 1.6rem;
 }
-.divFlexSub{
-    width: 386px;
-    height: 55px;
-    margin: 0 auto;
-    display: flex;
-    align-items: baseline;
-}
 .btn-suscripcion{
     background: #798BF2;
     border-radius: 50px;
-    width: 108px;
-    height: 47px;
+    width: 96px;
+    height: 40px;
     margin-right: 2.3rem;
-    align-self: center;
-    font-weight: 400;
-    font-size: 1.4rem;
+    position: relative;
+    left: 20rem;
+    top: -3.9rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+@media (min-width: 801px) and (max-width: 1199px) {
+    .divTituloVector{
+        margin-top: 18.6rem;
+        margin-left: 1.4rem;
+    }
+    .h2VectorGrande{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .cajaMasInfoVectorGrande{
+        width: 20.5rem;
+        padding: 0 0 1rem 0;
+        margin-top: 2.8rem;
+    }
 }
 
 
