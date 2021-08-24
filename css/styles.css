@@ -121,9 +121,9 @@ h4 {
 }
 
 h5 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
-    line-height: 3rem;
+    line-height: 2.3rem;
 }
 
 h6 {
@@ -894,6 +894,427 @@ select {
 }
 
 
+/*-------------------------------------- PAGINA QUIENES SOMOS --------------------------------------*/
+
+/* HEADER */
+.headerQuienes {
+    background-color: #F0FAF1;
+    height: 100vh;
+}
+.headerImg {
+    background-image: url(../img/headerQuienes.svg);
+    height: 60vh;
+    object-fit: contain;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.quienesIntro {
+    align-self: center;
+}
+
+/* SECCION PARRAFO/FORMAS */
+.quienesFormas {
+    background-image: url(../img/formas-quienes.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: contain;
+    margin-bottom: 8rem;
+    transform: translateX(10%);
+}
+.quienesFormas .p--1 {
+    transform: translateX(-10%);
+    padding-top: 15vh;
+}
+
+/* SECCION CONTENEDORES DEGRADE */
+.quienesDegradeIzq {
+    background-image: url(../img/forma_gradiente1-quienes.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-right-radius:25rem;
+    border-bottom-right-radius: 25rem;
+    margin-top: 16rem;
+}
+.quienesDegradeDer {
+    background-image: url(../img/forma_gradiente2-quienes.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 25rem;
+    border-bottom-left-radius: 25rem;
+    margin-bottom: 25rem;
+}
+.quienesDegradeTxt-izq {
+    color: white;
+    padding: 10rem 16rem 10rem 0;
+}
+.quienesDegradeTxt-izq .p--1 {
+    color: white;
+}
+.quienesDegradeTxt-der {
+    color: white;
+    padding: 10rem 0rem 10rem 16rem;
+}
+.quienesDegradeTxt-der .p--1 {
+    color: white;
+}
+.p-degrade--mobile {
+    display:none;
+}
+.p-degrade--desktop {
+    display: contents;
+}
+
+/* SECCION EQUIPO */
+.fondoOnda {
+    margin-top: 25rem;
+    margin-bottom: -8rem;
+    background-image: url(../img/fondo-onda.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+}
+#quienesEquipo h3 {
+    color: #394273;
+    transform: translateY(-100%);
+}
+.quienesEquipo-caja {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    display: flex;
+    padding: 0;
+    margin-top: 20rem;
+    justify-content: center;
+    height: 40vh;
+    transform: translateY(-25%);
+}
+.quienesEquipo-caja .equipoMiembro {
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-20%);
+}
+.quienesEquipo-caja h5 {
+    color: #394273;
+    margin: 1.6rem 0 4.8rem 0;
+}
+.quienesEquipo-caja .p--4 {
+    color: #7C7C7C;
+}
+
+@media (max-width: 800px) {
+    .quienessomos.quienesTxt, .quienessomos.quienesDegradeTxt, .quienessomos.call-to-action {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .quienessomos .quienesFormasTxt {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    .headerQuienes {
+        height: 45vh;
+    }
+    .headerImg {
+        height: 25vh;
+        object-fit: contain;
+        background-size: contain;
+        transform: translateX(15%);
+    }
+    .headerImg .quienesIntro {
+        transform: translateX(-15%);
+    }
+    .quienesFormas {
+        background-size: 30%;
+        margin-bottom: 4.8rem;
+        background-position-y: top;
+        background-position-x: left;
+        transform: translateX(2vw);
+    }
+    .quienesFormas .p--1 {
+        padding: 5vh 2vh 0vh 2vh;
+        transform: translateX(2vw);
+    }
+    .p-degrade--mobile {
+        display:contents;
+        text-decoration:underline;
+        color: white;
+    }
+    .p-degrade--desktop {
+        display: none;
+    }
+    .quienesDegradeTxt-izq {
+        color: white;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    .quienesDegradeTxt-der {
+        color: white;
+        padding: 3rem 3rem 3rem 0;
+    }
+    .quienesDegradeIzq {
+        background-size: cover;
+        margin-bottom: 0rem;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 2rem;
+        left: 0;
+        padding-right: 24vw;
+        width: 90%;
+    }
+    .quienesDegradeDer {
+        background-size: cover;
+        margin-bottom: 0rem;
+        margin-right: 0;
+        /* margin-left: 0; */
+        right: 0;
+        padding-left: 24vw;
+        width: 90%;
+    }
+    .fondoOnda {
+        height: 60vh;
+        background-size: cover;
+        background-position-x: left;
+        margin-bottom: 12vh;
+    }
+    #quienesEquipo {
+        margin-top: 16vh;
+        overflow-y:scroll;
+        height: auto;
+    }
+    #quienesEquipo h3 {
+        transform: translateY(0%);
+    }
+    .quienesEquipo-caja {
+        background: none;
+        box-shadow: none;
+        border-radius: none;
+        display: flex;
+        padding: 0;
+        margin-top: 14rem;
+        justify-content:start;
+        height: 45vh;
+    }
+    .quienesEquipo-caja .equipoMiembro {
+        align-self: center;
+        justify-self: center;
+        transform: translateY(0%);
+        padding: 0 0 0 0;
+    }
+    .call-to-action {
+        margin: 2vh 0 0vh 0;
+    }
+    .call-to-action h2 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+
+
+/* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
+
+/* HEADER */
+.headerHacemos {
+    height: 100vh;
+}
+.headerHacemosImg {
+    background-image: url(../img/hacemosfondo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    height:85vh;
+    width: 100vw;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+
+/* SECCION CAMINO */
+.camino {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.fondoCamino1 {
+    background-image: url(../img/caminoFondo1.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.fondoCamino2 {
+    background-image: url(../img/caminoFondo2.svg);
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.fondoCamino3 {
+    background-image: url(../img/caminoFondo3.svg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.hacemosCamino {
+    align-items: center;
+}
+.camino-2 {
+    margin: 16rem 0rem 16rem 0rem;
+}
+.camino-2-mobile {
+    display: none;
+}
+.hacemosCamino h4 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+}
+.hacemosCamino img {
+    height: 32rem;
+    width: 95%;
+}
+.scrollCamino {
+    justify-items: center;
+    display: none;
+}
+.scrollCirculo {
+    justify-items: center;
+    align-items: center;
+}
+.scrollLinea {
+    width: 1.5rem;
+    height: 16rem;
+    background: rgba(39, 139, 150, 0.3);
+    border-radius: 2rem;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+}
+.scrollCirculoInicio {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+.scrollCirculoMedio {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+.scrollCirculoFinal {
+    width: 10rem;
+    height: 10rem;
+    border: 2rem solid #BEDCDF;
+    border-radius: 100%;
+}
+
+
+
+/* SECCION CALL-TO-ACTION */
+.call-to-action {
+    margin-top: 0rem;
+}
+.callTxt h2 {
+    margin-bottom: 3.4rem;
+    color: #394273;
+}
+.callTxt p {
+    margin-bottom: 1.2rem;
+    color: #394273;
+}
+
+@media (min-width: 300px) and (max-width: 414px) {
+    .quehacemos.hacemosCamino, .quehacemos.call-to-action {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .headerHacemos {
+        height: 60vh;
+        margin-bottom: 4rem;
+    }
+    .headerHacemosImg {
+        background-image: url(../img/hacemosfondo.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        object-fit:fill;
+        height:100%;
+        width: 100vw;
+        background-position-x: center;
+        background-position-y: top;
+    }
+    .divContainerHeader{
+        width: 100vw;
+        height: 40rem;
+        margin-top: 4.7rem;
+    }
+    .divContainerHeaderTexto{
+        margin-left: 2rem;
+    }
+    .containerParrafoBotonHeader p {
+        display: none;
+    }
+    .titulosHeader {
+        width: 60vw;
+        height: 17.7rem;
+        margin-bottom: 4rem;
+    }
+    .headerHacemos .titulosHeader {
+        transform:translateY();
+    }
+    .headerHacemos .titulosHeader h3 {
+        width: 30vw;
+    }
+    .containerParrafoBotonHeader {
+        margin-top: 0rem;
+    }
+    .containerParrafoBotonHeader .btn-intro {
+        margin-top: -2rem;
+        margin-bottom: 12rem;
+        padding-left: 2.6rem;
+        padding-right: 2.6rem;
+        width: 14.8rem;
+    }
+    .camino {
+        margin-top: 16vh;
+    }
+    .fondoCamino2 {
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    .hacemosCamino h4 {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .scrollCirculo {
+        display: none;
+    }
+    .scrollCamino {
+        display: contents;
+    }
+    .hacemosCamino {
+        text-align: center;
+    }
+    .hacemosCamino div img {
+        height: 20rem;
+        margin: 3.2rem 0 3.2rem 0;
+    }
+    .callHacemos {
+        padding-top: 10.4rem;
+    }
+    .camino-2-mobile {
+        display: contents;
+    }
+    .camino-2 {
+        display: none;
+    }
+}
+
+
+
 
 /*--------------------------------------- SECCION CIUDADES --------------------------------------*/ 
 
@@ -1084,12 +1505,11 @@ select {
     position: relative;
     top: -6rem;
     font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-color: #394273;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #394273;
 }
 .sectionVectorGrandeMallorca{
     background-image: url(../img/Rectangle\ 298.svg);
@@ -1108,11 +1528,10 @@ color: #394273;
 }
 .cajaMasInfoVectorGrandeMallorca h3{
     font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-
-color: #394273;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #394273;
 
 }
 .cajaMasInfoVectorGrandeMallorca button{
@@ -1126,31 +1545,26 @@ color: #394273;
 }
 .pVectorGrandeMallorca{
     font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-
-color: #000000;
-
-
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 .h2HablemosCiudades{
     font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 30px;
-text-align: center;
-
-color: #394273;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #394273;
 }
 .pHablemosCiudades{
     font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-color: #394273;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #394273;
 }
 .btnHablemosCiudades{
     position: relative;
@@ -1404,10 +1818,10 @@ color: #394273;
 }
 .h2HablemosCiudades{
     font-style: normal;
-font-weight: 500;
-font-size: 4.8rem;
-line-height: 5.8rem;
-color: #394273;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    color: #394273;
 }
 .pHablemosCiudades{
     font-style: normal;
@@ -1424,402 +1838,13 @@ color: #394273;
     left: 0rem;
 }
 
-
-/*-------------------------------------- PAGINA QUIENES SOMOS --------------------------------------*/
-
-/* HEADER */
-.headerQuienes {
-    background-color: #F0FAF1;
-    height: 100vh;
-}
-.headerImg {
-    background-image: url(../img/headerQuienes.svg);
-    height: 60vh;
-    object-fit: contain;
-    background-position-x: right;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
-.quienesIntro {
-    align-self: center;
-}
-
-/* SECCION PARRAFO/FORMAS */
-.quienesFormas {
-    background-image: url(../img/formas-quienes.svg);
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-    background-size: 29rem;
-    margin-bottom: 20rem;
-}
-.quienesFormasTxt {
-    transform: translateY(45%);
-}
-
-/* SECCION CONTENEDORES DEGRADE */
-.quienesDegradeIzq {
-    background-image: url(../img/forma_gradiente1-quienes.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
-    margin-top: 25rem;
-}
-.quienesDegradeDer {
-    background-image: url(../img/forma_gradiente2-quienes.svg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%;
-    margin-bottom: 25rem;
-}
-.quienesDegradeTxt-izq {
-    color: white;
-    padding: 10rem 16rem 10rem 0;
-}
-.quienesDegradeTxt-izq .p--1 {
-    color: white;
-}
-.quienesDegradeTxt-der {
-    color: white;
-    padding: 10rem 0rem 10rem 16rem;
-}
-.quienesDegradeTxt-der .p--1 {
-    color: white;
-}
-
-/* SECCION EQUIPO */
-.fondoOnda {
-    margin-top: 25rem;
-    margin-bottom: -8rem;
-    background-image: url(../img/fondo-onda.svg);
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: contain;
-}
-#quienesEquipo h2 {
-    color: #394273;
-    transform: translateY(-100%);
-}
-.quienesEquipo-caja {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 2rem;
-    display: flex;
-    padding: 0;
-    margin-top: 20rem;
-    justify-content: center;
-    height: 40vh;
-    transform: translateY(-25%);
-}
-.quienesEquipo-caja .equipoMiembro {
-    align-self: center;
-    justify-self: center;
-    transform: translateY(-20%);
-}
-.quienesEquipo-caja h5 {
-    color: #394273;
-    margin: 1.6rem 0 4.8rem 0;
-}
-.quienesEquipo-caja .p--2 {
-    color: #7C7C7C;
-}
-
-@media (min-width: 300px) and (max-width: 414px) {
-    .quienessomos.quienesTxt, .quienessomos.quienesDegradeTxt, .quienessomos.call-to-action {
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
-    }
-    .quienessomos .quienesFormasTxt {
-        padding-right: 4rem;
-        padding-left: 4rem;
-    }
-    .headerQuienes {
-        height: 60vh;
-    }
-    .headerImg {
-        height: 25vh;
-        object-fit: contain;
-        background-size: contain;
-        transform: translateX(15%);
-    }
-    .headerImg .quienesIntro {
-        transform: translateX(-15%);
-    }
-    .quienesFormas {
-        background-size: 40%;
-        margin-bottom: 12rem;
-    }
-    .quienesFormasTxt .p--4 {
-        transform: translateY(-15%);
-    }
-    .quienesDegradeTxt-izq {
-        color: white;
-        padding: 3rem 0rem 3rem 0;
-    }
-    .quienesDegradeTxt-der {
-        color: white;
-        padding: 3rem 0rem 3rem 0;
-    }
-    .quienesDegradeIzq {
-        background: linear-gradient(130.1deg, rgba(39, 139, 150, 0.7) 29.83%, rgba(139, 217, 150, 0.7) 75.33%);
-        background-size: contain;
-        border-top-right-radius: 0%;
-        border-bottom-right-radius: 0%;
-        margin-top: 0;
-    }
-    .quienesDegradeDer {
-        background: linear-gradient(141.81deg, rgba(121, 139, 242, 0.7) 18.22%, rgba(243, 154, 0, 0.7) 72.55%);
-        background-size: contain;
-        border-top-left-radius: 0%;
-        border-bottom-left-radius: 0%;
-        margin-bottom: 0rem;
-    }
-    .fondoOnda {
-        height: 60vh;
+@media (max-width: 800px) {
+    .headerCiudades{
+        height: 40vh;
+        background: url(../img/calm-clouds-summer-turquoise-majorca-ocean\ 3.png);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position-x: left;
-    }
-    #quienesEquipo {
-        margin-top: 16vh;
-        overflow-y:scroll;
-        height: auto;
-    }
-    #quienesEquipo h2 {
-        transform: translateY(0%);
-    }
-    .quienesEquipo-caja {
-        background: none;
-        box-shadow: none;
-        border-radius: none;
-        display: flex;
-        padding: 0;
-        margin-top: 14rem;
-        justify-content:start;
-        height: 45vh;
-    }
-    .quienesEquipo-caja .equipoMiembro {
-        align-self: center;
-        justify-self: center;
-        transform: translateY(0%);
-        padding: 0 0 0 0;
-    }
-    .call-to-action {
-        margin: 2vh 0 2vh 0;
-    }
-    .call-to-action h2 {
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-}
-
-@media (min-width: 414,01px) and (max-width: 800px) {
-}
-
-
-
-/* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
-
-/* HEADER */
-.headerHacemos {
-    height: 100vh;
-}
-.headerHacemosImg {
-    background-image: url(../img/hacemosfondo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: contain;
-    height:85vh;
-    width: 100vw;
-    background-position-x: right;
-    background-position-y: top;
-}
-
-
-/* SECCION CAMINO */
-.camino {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-.fondoCamino1 {
-    background-image: url(../img/caminoFondo1.svg);
-    background-position-x: right;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
-.fondoCamino2 {
-    background-image: url(../img/caminoFondo2.svg);
-    background-position-x: left;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
-.fondoCamino3 {
-    background-image: url(../img/caminoFondo3.svg);
-    background-position-x: right;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
-.hacemosCamino {
-    align-items: center;
-}
-.camino-2 {
-    margin: 16rem 0rem 16rem 0rem;
-}
-.camino-2-mobile {
-    display: none;
-}
-.hacemosCamino h4 {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-    line-height: 3.6rem;
-    font-weight: 500;
-}
-.hacemosCamino img {
-    height: 32rem;
-    width: 95%;
-}
-.scrollCamino {
-    justify-items: center;
-    display: none;
-}
-.scrollCirculo {
-    justify-items: center;
-    align-items: center;
-}
-.scrollLinea {
-    width: 1.5rem;
-    height: 16rem;
-    background: rgba(39, 139, 150, 0.3);
-    border-radius: 2rem;
-    align-self: center;
-    margin: 2rem 0 2rem 0;
-}
-.scrollCirculoInicio {
-    width: 10rem;
-    height: 10rem;
-    border: 2rem solid #BEDCDF;
-    border-radius: 100%;
-}
-.scrollCirculoMedio {
-    width: 10rem;
-    height: 10rem;
-    border: 2rem solid #BEDCDF;
-    border-radius: 100%;
-}
-.scrollCirculoFinal {
-    width: 10rem;
-    height: 10rem;
-    border: 2rem solid #BEDCDF;
-    border-radius: 100%;
-}
-
-
-
-/* SECCION CALL-TO-ACTION */
-.call-to-action {
-    margin-top: 0rem;
-}
-.callTxt {
-    padding-top: 24rem;
-}
-.callTxt h2 {
-    margin-bottom: 3.4rem;
-    color: #394273;
-}
-.callTxt p {
-    margin-bottom: 1.2rem;
-    color: #394273;
-}
-
-@media (min-width: 300px) and (max-width: 414px) {
-    .quehacemos.hacemosCamino, .quehacemos.call-to-action {
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
-    }
-    .headerHacemos {
-        height: 60vh;
-        margin-bottom: 4rem;
-    }
-    .headerHacemosImg {
-        background-image: url(../img/hacemosfondo.svg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        object-fit:fill;
-        height:100%;
-        width: 100vw;
-        background-position-x: center;
-        background-position-y: top;
-    }
-    .divContainerHeader{
-        width: 100vw;
-        height: 40rem;
-        margin-top: 4.7rem;
-    }
-    .divContainerHeaderTexto{
-        margin-left: 2rem;
-    }
-    .containerParrafoBotonHeader p {
-        display: none;
-    }
-    .titulosHeader {
-        width: 60vw;
-        height: 17.7rem;
-        margin-bottom: 4rem;
-    }
-    .headerHacemos .titulosHeader {
-        transform:translateY();
-    }
-    .headerHacemos .titulosHeader h3 {
-        width: 30vw;
-    }
-    .containerParrafoBotonHeader {
-        margin-top: 0rem;
-    }
-    .containerParrafoBotonHeader .btn-intro {
-        margin-top: -2rem;
-        margin-bottom: 12rem;
-        padding-left: 2.6rem;
-        padding-right: 2.6rem;
-        width: 14.8rem;
-    }
-    .camino {
-        margin-top: 16vh;
-    }
-    .fondoCamino2 {
-        background-position-x: center;
-        background-position-y: center;
-        background-repeat: no-repeat;
-    }
-    .hacemosCamino h4 {
-        margin-bottom: 2rem;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.4rem;
-    }
-    .scrollCirculo {
-        display: none;
-    }
-    .scrollCamino {
-        display: contents;
-    }
-    .hacemosCamino {
-        text-align: center;
-    }
-    .hacemosCamino div img {
-        height: 20rem;
-        margin: 3.2rem 0 3.2rem 0;
-    }
-    .callHacemos {
-        padding-top: 10.4rem;
-    }
-    .camino-2-mobile {
-        display: contents;
-    }
-    .camino-2 {
-        display: none;
+        border-radius: 0 0 20px 20px;
     }
 }
