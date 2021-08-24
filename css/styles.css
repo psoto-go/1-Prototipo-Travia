@@ -181,6 +181,8 @@ ul {
     margin-top: 7.4rem;
     background-repeat: none;
     background-size: cover;
+    margin-right: 0;
+    margin-left: 0;
 }
 .rrss {
     font-size: 3rem;
@@ -231,7 +233,7 @@ footer article div img {
     border-radius: 8px;
     border-style: none;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: normal;
     width: 320px;
     height: 55px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
@@ -439,9 +441,9 @@ footer article div img {
 .divContainerHeaderTexto{
     margin-left: 11.2rem;
 }
-.divTextoHeader{
+/* .divTextoHeader{
     margin-left: 0;
-}
+} */
 .titulosHeader{
     width: 63rem;
     height: 17.7rem;
@@ -1005,6 +1007,23 @@ select {
     color: #7C7C7C;
 }
 
+
+
+/* CALL-TO-ACTION */
+.call-to-action h2 {
+    color: #394273;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin-bottom: 3.6rem;
+}
+.quienessomos .call-to-action p {
+    color:#394273;
+    margin-bottom: 3.6rem;
+}
+
+
+
 @media (max-width: 800px) {
     .quienessomos.quienesTxt, .quienessomos.quienesDegradeTxt, .quienessomos.call-to-action {
         padding-right: 2.4rem;
@@ -1102,7 +1121,7 @@ select {
         transform: translateY(0%);
         padding: 0 0 0 0;
     }
-    .call-to-action {
+    .quienessomos .call-to-action {
         margin: 2vh 0 0vh 0;
     }
     .call-to-action h2 {
@@ -1117,6 +1136,9 @@ select {
 /* -------------------------------------- PAGINA QUE HACEMOS --------------------------------------*/
 
 /* HEADER */
+.quehacemos {
+    padding: 0;
+}
 .headerHacemos {
     height: 100vh;
 }
@@ -1130,7 +1152,9 @@ select {
     background-position-x: right;
     background-position-y: top;
 }
-
+.quehacemos .containerParrafoBotonHeader p {
+    width: 80%;
+}
 
 /* SECCION CAMINO */
 .camino {
@@ -1212,22 +1236,25 @@ select {
 
 
 /* SECCION CALL-TO-ACTION */
-.call-to-action {
-    margin-top: 0rem;
+.quehacemos .call-to-action {
+    margin-top: 16vh;
 }
-.callTxt h2 {
+.quehacemos .callTxt h3 {
     margin-bottom: 3.4rem;
     color: #394273;
 }
-.callTxt p {
-    margin-bottom: 1.2rem;
-    color: #394273;
+.quehacemos .callTxt p {
+    color: black;
+    margin-bottom: 3.6rem;
 }
 
-@media (min-width: 300px) and (max-width: 414px) {
-    .quehacemos.hacemosCamino, .quehacemos.call-to-action {
+@media (max-width: 800px) {
+    .quehacemos .divContainerHeader, .quehacemos.camino, .quehacemos.call-to-action {
         padding-right: 2.4rem;
         padding-left: 2.4rem;
+    }
+    .quehacemos .call-to-action {
+        margin-top: 12vh;
     }
     .headerHacemos {
         height: 60vh;
@@ -1265,6 +1292,14 @@ select {
     .headerHacemos .titulosHeader h3 {
         width: 30vw;
     }
+    .titulosHacemos {
+        width: 85%;
+        margin-bottom: 11.2rem;
+    }
+    .titulosHacemos p {
+        margin-top: 3rem;
+        width: 70%;
+    }
     .containerParrafoBotonHeader {
         margin-top: 0rem;
     }
@@ -1273,7 +1308,7 @@ select {
         margin-bottom: 12rem;
         padding-left: 2.6rem;
         padding-right: 2.6rem;
-        width: 14.8rem;
+        /* width: 14.8rem; */
     }
     .camino {
         margin-top: 16vh;
@@ -1301,9 +1336,6 @@ select {
     .hacemosCamino div img {
         height: 20rem;
         margin: 3.2rem 0 3.2rem 0;
-    }
-    .callHacemos {
-        padding-top: 10.4rem;
     }
     .camino-2-mobile {
         display: contents;
