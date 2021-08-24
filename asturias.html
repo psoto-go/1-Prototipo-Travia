@@ -28,38 +28,35 @@
         <!-- Stylesheet propia -->
         <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="ciudades">
     <header class="headerCiudades headerCiudadesAsturias" id="headerCiudades">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light "> 
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/Golondrina blanca.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo de Travia">
-                    </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="index.html"><img src="img/Golondrina blanca.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo de Travia"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="divContainerBar">
+                    </button>
+                    <div class="collapse navbar-collapse containerNavHeader" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="navLinkCiudades" href="./index.html">Inicio</a>
+                                <a class="navLink inicioNavBar" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="navLinkCiudades" href="#">Quienes Somos</a>
+                                <a class="navLink" href="quienessomos.html">Quienes Somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="navLinkCiudades" href="#">Que hacemos</a>
+                                <a class="navLink" href="quehacemos.html">Que hacemos</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="navLinkCiudades inicioNavBar dropdown-toggle distintoCiudades" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="navLink dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Destinos
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item navLinkB" aria-current="page"  href="./asturias.html">Asturias</a></li>
-                                    <li><a class="dropdown-item navLinkB" href="./canarias.html">Islas Canarias</a></li>
-                                    <li><a class="dropdown-item navLinkB" href="./Mallorca.html">Mallorca</a></li>
-                                    <li><a class="dropdown-item navLinkB" href="./murcia.html">Murcia</a></li>
+                                    <li><a class="dropdown-item navLinkB" aria-current="page" href="asturias.html">Asturias</a></li>
+                                    <li><a class="dropdown-item navLinkB" href="canarias.html">Islas Canarias</a></li>
+                                    <li><a class="dropdown-item navLinkB" href="Mallorca.html">Mallorca</a></li>
+                                    <li><a class="dropdown-item navLinkB" href="murcia.html">Murcia</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -71,11 +68,11 @@
                 </div>
             </nav>
         </div>
-        <div class="row divPrincipalTitulo">
+        <div class="row divPrincipalTitulo justify-content-center">
             <div class="col-md-12 col-xl-12 col-lg-12 divSecundarioTitulo">
-                <h2 class="text-center h2CiudadesHeader">Asturias</h2>
-                <p class="text-center">Sed dignissim natoque vel libero pellentesque nisl</p>
-                <button class="btn btn-intro">¡Hablemos!</button>
+                <h1 class="text-center h1CiudadesHeader">Asturias</h1>
+                <h4 class="text-center">Sed dignissim natoque vel libero pellentesque nisl</h4>
+                <button class="btn btn-intro">Conoce más</button>
             </div>
         </div>
     </header>
@@ -112,15 +109,11 @@
                 </ul>
             </div>
         </article>
-        <article class="row">
-            <div class="col-md-12 col-xl-6 col-lg-6 containerPFiltros">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis sed arcu risus ultricies facilisis in at ullamcorper aliquam. Metus placerat vitae tellus arcu id. Ut tincidunt ipsum cursus tempus quis scelerisque. </p>
-                <br>
-                <br>
-                <p>Sed dignissim natoque vel libero pellentesque nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis sed arcu risus ultricies facilisis in at ullamcorper aliquam.</p>
+        <article class="row justify-content-center">
+            <div class="col-md-8 col-lg-7 containerPFiltros">
+                <p class="p--1">Palma es el destino perfecto para aquellos que disfrutan del calor de la playa y un ambiente acogedor al estilo caribeño. En la isla encontrarás innumerables actividades para disfrutar del día: desde planes de campo, montaña y respirar al aire libre hasta la mejor diversión y ocio de la ciudad y el paseo marítimo. </p>
             </div>
-            <div class="col-md-12 col-xl-6 col-lg-6 containerBackgroundImageFiltrosMallorca">
-
+            <div class="col-md-4 col-lg-5 containerBackgroundImageFiltrosMallorca">
             </div>
         </article>
     </section>
@@ -128,28 +121,28 @@
     <!-- SECCION CARDS -->
 
     <section class="container sectionCards sectionCardsCiudades">
-        <div class="imagenBCKcards ciudaesCards">
-            <h2 class="text-center h2Cards h2CardsCiudades">Hoteles</h2>
+        <div class="ciudadesCards">
+            <h3 class="text-center h3Cards">Hoteles</h3>
             <p class="text-center pCardsCiudades">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <article class="row"> 
                 <div class="col-md-12 col-xl-12 col-lg-12 containerCardsIndex">
                     <div class="cardBlanca">
                         <img src="./img/bed 3.svg" alt="cama">
-                        <h2>Bons Aires</h2>
-                        <p>Habitación en piso particular.</p>
-                        <h3>Desde 860€</h3>
+                        <h6>Bons Aires</h6>
+                        <p class="p--3">Habitación en piso particular.</p>
+                        <p class="p--1">Desde 860€</p>
                     </div>
                     <div class="cardAzul">
-                        <img src="./img/bed 3.svg" alt="cama">
-                        <h2>Centro de la ciudad</h2>
-                        <p>Apartamento Completo.</p>
-                        <h3>Desde 1747€</h3>
+                        <img src="./img/bed 7.svg" alt="cama">
+                        <h6>Centro de la ciudad</h6>
+                        <p class="p--3">Apartamento Completo.</p>
+                        <p class="p--1">Desde 1747€</p>
                     </div>
                     <div class="cardBlanca">
                         <img src="./img/bed 3.svg" alt="cama">
-                        <h2>Canamunt</h2>
-                        <p>Habitación Hotel Boutique FIL SUITES.</p>
-                        <h3>Desde 5000€</h3>
+                        <h6>Canamunt</h6>
+                        <p class="p--3">Habitación Hotel Boutique FIL SUITES.</p>
+                        <p class="p--1">Desde 5000€</p>
                     </div>
                 </div>
             </article>
@@ -158,12 +151,12 @@
 
 
 
-<!-- SECCION VECTOR GRANDE -->
-<section class="container-fluid sectionVectorGrandeMallorca">
+    <!-- SECCION VECTOR GRANDE -->
+    <section class="container-fluid fondoOnda">
     <div class="row">
         <div class="col-md-12 col-xl-12 col-lg-12 divTituloVector">
-            <h2 class="h2VectorGrande">Lorem ipsum dolor</h2>
-            <p class="pVectorGrandeMallorca">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3 class="h3VectorGrande">Guia resumida para estancia en Asturias</h3>
+            <p class="p--4 desktop-none">Información adicional para viajeros de media estancia</p>
         </div>
     </div>
     <article class="row displayFlexContainerPadre displayFlexContainerPadreCiudades">
@@ -171,7 +164,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/wifi.svg" alt="wifi">
-                    <h3>Velocidad de conexión media</h3>   
+                    <p class="p--2">Velocidad de conexión media</p>   
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">       
@@ -180,7 +173,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/transporte.svg" alt="transporte">
-                    <h3>Movilidad</h3>                   
+                    <p class="p--2">Movilidad</p>                   
                 </div>               
                 <img src="./img/btnmas.svg" alt="boton mas">         
             </div>
@@ -188,7 +181,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/users.svg" alt="trabajo en grupo">
-                    <h3>Espacios coworking</h3>
+                    <p class="p--2">Espacios coworking</p>
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">         
@@ -196,7 +189,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/identidicacion.svg" alt="salud">
-                    <h3>Seguro de salud</h3>
+                    <p class="p--2">Seguro de salud</p>
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">        
@@ -206,7 +199,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/glass 1.svg" alt="Vaso de agua">
-                    <h3>Calidad del agua</h3>
+                    <p class="p--2">Calidad del agua</p>
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">        
@@ -214,7 +207,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/operador mobil.svg" alt="operador mobil">
-                    <h3>Operador móvil</h3>
+                    <p class="p--2">Operador móvil</p>
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">         
@@ -222,7 +215,7 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/ph_airplane-takeoff-light.svg" alt="compañia low cost imagen">
-                    <h3>Compañia low cost</h3>
+                    <p class="p--2">Compañia low cost</p>
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">       
@@ -230,37 +223,37 @@
             <div class="cajaMasInfoVectorGrandeMallorca">
                 <div class="elementosGraficos">
                     <img src="./img/ph_airplane-light.svg" alt="compañia aerea larga distancia imagen">
-                    <h3>Compañia aérea larga distancia</h3>
+                    <p class="p--2">Compañia aérea larga distancia</p>
                 </div>
                 
                 <img src="./img/btnmas.svg" alt="boton mas">         
             </div>
         </div>
     </article>
-</section>
+    </section>
 
-<!-- GOOGLE MAPS -->
-<section class="container-fluid">
-    <article class="row">
-        <div class="col-md-12 col-xl-12 col-lg-12 tamañoMapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487392.0930033647!2d-6.967794357963876!3d43.2710626218866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cfa609eb09d%3A0xf8b5f32b7dc69e3a!2sPrincipado%20de%20Asturias%2C%20Asturias%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1629221114106!5m2!1ses!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </article>
-</section>
-
-
-
-    <!-- ----------------- -->
-    <section class="container">
+    <!-- GOOGLE MAPS -->
+    <section class="container-fluid">
         <article class="row">
-            <div class="col-md-12 col-xl-12 col-lg-12"> 
-                <h2 class="text-center h2HablemosCiudades">Lorem ipsum</h2>
-                <p class="text-center pHablemosCiudades">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et asperiores perspiciatis recusandae aliquam doloremque vel autem temporibus beatae, ut laborum dolores non nesciunt quidem velit enim molestias consectetur facere.</p>
-            </div>
-            <div class="row justify-content-md-center btnHablemosCiudades">
-                <input class="btn btn-intro btnHablemosCiudades" type="button" value="Programar Llamada">
+            <div class="col-md-12 col-xl-12 col-lg-12 tamañoMapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487392.0930033647!2d-6.967794357963876!3d43.2710626218866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cfa609eb09d%3A0xf8b5f32b7dc69e3a!2sPrincipado%20de%20Asturias%2C%20Asturias%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1629221114106!5m2!1ses!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
+    </section>
+
+
+
+    <!-- SECCION CALL-TO-ACTION -->
+    <section class="container-fluid call-to-action">
+        <div class="container">
+            <div class="row callTxt justify-content-center">
+                <div class="col-lg-8 col-sm-12 text-center">
+                    <h2>Lorem ipsum lorem </h2>
+                    <p class="p--4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida turpis ut sed pulvinar aliquet quis faucibus id duis. Lacus, ac, ut odio velit feugiat.</p>
+                    <button class="btn btn-intro">Programar llamada</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
